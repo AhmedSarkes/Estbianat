@@ -1,0 +1,89 @@
+:root {
+    --main-color: #396d0c;
+    --section-color: #f8faf4;
+    --part-color: #f5fdee;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Start Test */
+.test {
+    border: 1px solid #000;
+}
+/* End Test */
+
+/* Start Index Page */
+/* Start Navbar In All Pages */
+.nav-contact {
+    background-color: var(--part-color);
+}
+.navbar .logo {
+    width: 120px;
+}
+.navbar .navbar-toggler {
+    font-size: 25px;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color);
+    color: #000;
+    transition: 0.3s;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .nav-item .nav-link {
+    color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar .nav-item .nav-link.active {
+    background-color: var(--part-color);
+    padding: 10px;
+    border-radius: 7px;
+}
+.navbar .nav-item .nav-link:hover {
+    color: var(--main-color);
+}
+.navbar form .login {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.navbar form .login:hover {
+    color: #FFF;
+    background-color: var(--main-color);
+}
+.navbar form .add-survey {
+    color: #FFF;
+    background-color: var(--main-color);
+    opacity: 0.6;
+    margin-right: 25px;
+    transition: 0.5s;
+}
+.navbar form .add-survey:hover {
+    opacity: 1;
+}
+@media (max-width: 991px) {
+    .navbar .logo {
+        width: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar .logo {
+        width: 80px;
+    }
+    .navbar .navbar-toggler {
+        font-size: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .navbar .logo {
+        width: 60px;
+    }
+    .navbar .navbar-toggler {
+        font-size: 18px;
+    }
+}
+/* End Navbar In All Pages */
