@@ -207,8 +207,6 @@ body {
         width: 20px;
         height: 2px;
     }
-    /* End Landing */
-    /* Start Landing */
     .landing .icon-arrow {
         font-size: 22px;
     }
@@ -217,6 +215,22 @@ body {
         height: 2px;
     }
     /* End Landing */
+    /* Start About Survey */
+    .about-survey .about-survey-text .about-survey-heading {
+        font-size: 40px;
+    }
+    .about-survey-body .left-side {
+        margin-top: 0;
+        margin-left: 145px;
+    }
+    .about-survey-body .left-side img:last-of-type {
+        top: 60%;
+        left: 70%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 225px;
+    }
+    /* End About Survey */
 }
 @media (max-width: 350px) {
     /* Start Navbar */
@@ -235,8 +249,6 @@ body {
         width: 15px;
         height: 2px;
     }
-    /* End Landing */
-    /* Start Landing */
     .landing .icon-arrow {
         font-size: 22px;
     }
@@ -245,5 +257,21 @@ body {
         height: 2px;
     }
     /* End Landing */
+    /* Start About Survey */
+    .about-survey .about-survey-text .about-survey-heading {
+        font-size: 40px;
+    }
+    .about-survey-body .left-side {
+        margin-top: 0;
+        margin-left: 145px;
+    }
+    .about-survey-body .left-side img:last-of-type {
+        top: 60%;
+        left: 70%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 225px;
+    }
+    /* End About Survey */
 }
 /* End Media Query */
