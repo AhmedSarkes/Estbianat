@@ -18,6 +18,9 @@ body {
 .nav-contact {
     background-color: var(--part-color);
 }
+.nav-contact .lang-btn {
+    border: none;
+}
 .navbar .logo {
     width: 120px;
 }
@@ -65,25 +68,182 @@ body {
 .navbar form .add-survey:hover {
     opacity: 1;
 }
-@media (max-width: 991px) {
+/* End Navbar In All Pages */
+/* Start Landing */
+.landing .left-slide,
+.landing .right-slide {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landing .left-slide {
+    left: 10%;
+}
+.landing .right-slide {
+    right: 10%;
+}
+.landing .icon-arrow {
+    font-size: 36px;
+}
+/* End Landing */
+/* Start About Survey */
+.about-survey {
+    margin-top: 120px;
+}
+.about-survey .about-survey-text .about-survey-heading {
+    color: var(--main-color);
+    font-size: 45px;
+}
+.about-survey-body .left-side {
+    margin-top: -250px;
+    position: relative;
+}
+.about-survey-body .left-side img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -359px;
+}
+.about-survey-body .left-side img:last-of-type {
+    width: 500px;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+.about-survey-body .right-side {
+    text-align: end;
+}
+.about-survey-body .right-side .surveys {
+    background-color: var(--main-color);
+    color: #FFF;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.about-survey-body .right-side .surveys:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+.about-survey-body .right-side .add-survey {
+    background-color: #FFF;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: 0.5s;
+    margin-left: 40px;
+}
+.about-survey-body .right-side .add-survey:hover {
+    background-color: var(--main-color);
+    color: #FFF;
+    transition: 0.5s;
+}
+/* End About Survey */
+
+
+
+
+
+
+
+
+/* Start Media Query */
+@media (max-width: 992px) {
+    /* Start Navbar */
     .navbar .logo {
         width: 100px;
     }
+    .navbar {
+        position: relative;
+    }
+    .navbar .navbar-collapse {
+        background-color: #FFF;
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 1;
+    
+    }
+    /* End Navbar */
+    /* Start Landing */
+    .landing .icon-arrow {
+        font-size: 30px;
+    }
+    .landing .carousel-indicators [data-bs-target] {
+        width: 25px;
+        height: 2px;
+    }
+    /* End Landing */
+    /* Start About Survey */
+    .about-survey .about-survey-text .about-survey-heading {
+        font-size: 40px;
+    }
+    .about-survey-body .left-side {
+        margin-top: 0;
+        margin-left: 145px;
+    }
+    .about-survey-body .left-side img:last-of-type {
+        top: 60%;
+        left: 70%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 225px;
+    }
+    /* End About Survey */
 }
 @media (max-width: 768px) {
+    /* Start Navbar */
     .navbar .logo {
         width: 80px;
     }
     .navbar .navbar-toggler {
         font-size: 20px;
     }
+    /* End Navbar */
+    /* Start Landing */
+    .landing .icon-arrow {
+        font-size: 26px;
+    }
+    .landing .carousel-indicators [data-bs-target] {
+        width: 20px;
+        height: 2px;
+    }
+    /* End Landing */
+    /* Start Landing */
+    .landing .icon-arrow {
+        font-size: 22px;
+    }
+    .landing .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 2px;
+    }
+    /* End Landing */
 }
-@media (max-width: 375px) {
+@media (max-width: 350px) {
+    /* Start Navbar */
     .navbar .logo {
         width: 60px;
     }
     .navbar .navbar-toggler {
         font-size: 18px;
     }
+    /* End Navbar */
+    /* Start Landing */
+    .landing .icon-arrow {
+        font-size: 22px;
+    }
+    .landing .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 2px;
+    }
+    /* End Landing */
+    /* Start Landing */
+    .landing .icon-arrow {
+        font-size: 22px;
+    }
+    .landing .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 2px;
+    }
+    /* End Landing */
 }
-/* End Navbar In All Pages */
+/* End Media Query */
