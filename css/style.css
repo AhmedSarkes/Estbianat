@@ -1,7 +1,7 @@
 :root {
     --main-color: #396d0c;
-    --section-color: #f8faf4;
     --part-color: #f5fdee;
+    --section-color: #f8faf4;
 }
 html,
 body {
@@ -9,7 +9,6 @@ body {
 }
 body {
     font-family: 'Cairo', sans-serif;
-    font-size: 14px;
     color: #000;
 }
 
@@ -126,20 +125,26 @@ body {
 .about-survey {
     margin-top: 120px;
 }
-.about-survey .about-survey-text .about-survey-heading {
+.heading {
     color: var(--main-color);
     font-size: 45px;
+    font-weight: bold;
+}
+/* .pra-heading {
+} */
+.pra-body {
+    text-align: end;
 }
 .about-survey-body .left-side {
     margin-top: 0px;
     position: relative;
 }
 .about-survey-body .left-side img {
+    width: 500px;
     border-radius: 0 20px 20px 0;
-    margin-left: -113px;
+    margin-left: -125px;
 }
 .about-survey-body .left-side img:last-of-type {
-    width: 500px;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -148,13 +153,14 @@ body {
     text-align: end;
     margin-top: 0;
 }
-.about-survey-body .right-side .surveys {
+ .surveys-btn {
     background-color: var(--main-color);
     color: #FFF;
+    padding: 15px;
     opacity: 0.6;
     transition: 0.3s;
 }
-.about-survey-body .right-side .surveys:hover {
+.about-survey-body .right-side .surveys-btn:hover {
     opacity: 1;
     transition: 0.5s;
 }
@@ -171,6 +177,32 @@ body {
     transition: 0.5s;
 }
 /* End About Survey */
+/* Start Outer Survey */
+.outer-survey {
+    background-color: var(--section-color);
+}
+.hand-holding {
+    color: var(--main-color);
+    font-size: 9rem;
+}
+/* End Outer Survey */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,14 +212,33 @@ body {
 
 
 /* Start Media Query */
-@media (max-width: 1200) {
+@media (max-width: 1400px) {
     /* Start About Survey */
+    .about-survey-body .left-side img {
+        width: 450px;
+        margin-left: -80px;
+    }
     .about-survey-body .left-side img:last-of-type {
-        top: 60%;
-        left: 30%;
+        top: 30%;
+        left: 20%;
     }
     .about-survey-body .right-side {
-        margin-top: 225px;
+        margin-top: 0;
+    }
+    /* End About Survey */
+}
+@media (max-width: 1200px) {
+    /* Start About Survey */
+    .about-survey-body .left-side img {
+        width: 400px;
+        margin-left: -123px;
+    }
+    .about-survey-body .left-side img:last-of-type {
+        top: 25%;
+        left: 40%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 0;
     }
     /* End About Survey */
 }
@@ -210,18 +261,18 @@ body {
     }
     /* End Navbar */
     /* Start About Survey */
-    .about-survey .about-survey-text .about-survey-heading {
-        font-size: 40px;
+    .heading {
+        font-size: 36px;
     }
     .about-survey-body .left-side img:first-of-type {
-        margin-left: 0;
+        margin-left: -13px;
     }
     .about-survey-body .left-side img:last-of-type {
         top: 60%;
-        left: 45%;
+        left: 60%;
     }
     .about-survey-body .right-side {
-        margin-top: 225px;
+        margin-top: 190px;
     }
     /* End About Survey */
 }
@@ -235,19 +286,46 @@ body {
     }
     /* End Navbar */
     /* Start About Survey */
-    .about-survey .about-survey-text .about-survey-heading {
-        font-size: 40px;
+    .heading {
+        font-size: 30px;
     }
     .about-survey-body .left-side {
-        margin-top: 0;
-        margin-left: 145px;
+        margin-left: 0px;
     }
     .about-survey-body .left-side img:last-of-type {
         top: 60%;
-        left: 70%;
+        left: 47%;
     }
     .about-survey-body .right-side {
-        margin-top: 225px;
+        margin-top: 170px;
+    }
+    /* End About Survey */
+}
+@media (max-width: 540px) {
+    /* Start About Survey */
+    .about-survey-body .left-side img {
+        width: 350px;
+    }
+    .about-survey-body .left-side img:last-of-type {
+        top: 60%;
+        left: 50%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 150px;
+    }
+    /* End About Survey */
+}
+@media (max-width: 480px) {
+    /* Start About Survey */
+    .about-survey-body .left-side img {
+        width: 280px;
+    }
+    .about-survey-body .left-side img:last-of-type {
+        top: 60%;
+        left: 54%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 120px;
     }
     /* End About Survey */
 }
@@ -261,19 +339,27 @@ body {
     }
     /* End Navbar */
     /* Start About Survey */
-    .about-survey .about-survey-text .about-survey-heading {
+    .heading {
         font-size: 40px;
     }
-    .about-survey-body .left-side {
-        margin-top: 0;
-        margin-left: 145px;
+    .about-survey-body .left-side img {
+        width: 230px;
     }
     .about-survey-body .left-side img:last-of-type {
         top: 60%;
-        left: 70%;
+        left: 60%;
     }
-    .about-survey-body .right-side {
-        margin-top: 225px;
+    .about-survey-body .right-side .add-survey,
+    .about-survey-body .right-side .surveys {
+        padding: 7px;
+        font-size: 14px;
+        width: 105px;
+    }
+    .about-survey-body .right-side .surveys {
+        margin-right: 10px;
+    }
+    .about-survey-body .right-side .add-survey {
+        margin-left: 55px;
     }
     /* End About Survey */
 }
