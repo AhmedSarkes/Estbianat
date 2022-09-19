@@ -131,22 +131,22 @@ body {
     font-size: 45px;
 }
 .about-survey-body .left-side {
-    margin-top: -250px;
+    margin-top: 0px;
     position: relative;
 }
 .about-survey-body .left-side img {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-left: -359px;
+    border-radius: 0 20px 20px 0;
+    margin-left: -113px;
 }
 .about-survey-body .left-side img:last-of-type {
     width: 500px;
     position: absolute;
-    top: 90%;
-    left: 60%;
+    top: 30%;
+    left: 30%;
 }
 .about-survey-body .right-side {
     text-align: end;
+    margin-top: 0;
 }
 .about-survey-body .right-side .surveys {
     background-color: var(--main-color);
@@ -180,6 +180,17 @@ body {
 
 
 /* Start Media Query */
+@media (max-width: 1200) {
+    /* Start About Survey */
+    .about-survey-body .left-side img:last-of-type {
+        top: 60%;
+        left: 30%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 225px;
+    }
+    /* End About Survey */
+}
 @media (max-width: 992px) {
     /* Start Navbar */
     .navbar .logo {
@@ -194,30 +205,20 @@ body {
         top: 100%;
         right: 50%;
         transform: translateX(50%);
-        z-index: 1;
+        z-index: 9999;
     
     }
     /* End Navbar */
-    /* Start Landing */
-    .landing .icon-arrow {
-        font-size: 30px;
-    }
-    .landing .carousel-indicators [data-bs-target] {
-        width: 25px;
-        height: 2px;
-    }
-    /* End Landing */
     /* Start About Survey */
     .about-survey .about-survey-text .about-survey-heading {
         font-size: 40px;
     }
-    .about-survey-body .left-side {
-        margin-top: 0;
-        margin-left: 145px;
+    .about-survey-body .left-side img:first-of-type {
+        margin-left: 0;
     }
     .about-survey-body .left-side img:last-of-type {
         top: 60%;
-        left: 70%;
+        left: 45%;
     }
     .about-survey-body .right-side {
         margin-top: 225px;
@@ -259,22 +260,6 @@ body {
         font-size: 18px;
     }
     /* End Navbar */
-    /* Start Landing */
-    .landing .icon-arrow {
-        font-size: 22px;
-    }
-    .landing .carousel-indicators [data-bs-target] {
-        width: 15px;
-        height: 2px;
-    }
-    .landing .icon-arrow {
-        font-size: 22px;
-    }
-    .landing .carousel-indicators [data-bs-target] {
-        width: 15px;
-        height: 2px;
-    }
-    /* End Landing */
     /* Start About Survey */
     .about-survey .about-survey-text .about-survey-heading {
         font-size: 40px;
