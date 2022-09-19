@@ -8,6 +8,10 @@
     <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -99,76 +103,19 @@
     </nav>
     <!-- End Navbar -->
     <!-- Start Landing -->
-    <div class="landing mt-lg-4 mt-2">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="true"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button slider-box-btn"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button slider-box-btn"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button slider-box-btn"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="#">
-              <img src="images/landing.png" class="d-block w-100" alt="" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="images/landing.png" class="d-block w-100" alt="" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="#">
-              <img src="images/landing.png" class="d-block w-100" alt="" />
-            </a>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev left-slide"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span
-            class="fa-solid fa-circle-arrow-left icon-arrow"
-            aria-hidden="true"
-          ></span>
-        </button>
-        <button
-          class="carousel-control-next right-slide"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span
-            class="fa-solid fa-circle-arrow-right icon-arrow"
-            aria-hidden="true"
-          ></span>
-        </button>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
+        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
+        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
+        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
     <!-- End Landing -->
+    <!-- Start About Survey -->
     <div class="about-survey">
       <div class="about-survey-head container">
         <div class="row">
@@ -240,9 +187,11 @@
       </div>
       <!-- End Body -->
     </div>
+    <!-- End About Survey -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

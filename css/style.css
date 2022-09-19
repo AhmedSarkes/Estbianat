@@ -3,8 +3,14 @@
     --section-color: #f8faf4;
     --part-color: #f5fdee;
 }
+html,
+body {
+    position: relative;
+}
 body {
     font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    color: #000;
 }
 
 /* Start Test */
@@ -70,22 +76,50 @@ body {
 }
 /* End Navbar In All Pages */
 /* Start Landing */
-.landing .left-slide,
-.landing .right-slide {
-    width: 36px;
-    height: 36px;
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+    color: var(--main-color);
+    background-color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.landing .left-slide {
-    left: 10%;
-}
-.landing .right-slide {
+.swiper-button-next {
     right: 10%;
 }
-.landing .icon-arrow {
-    font-size: 36px;
+.swiper-button-prev {
+    left: 10%;
+}
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 3px;
+    border-radius: 0;
+    background-color: #FFF;
 }
 /* End Landing */
 /* Start About Survey */
@@ -199,22 +233,6 @@ body {
         font-size: 20px;
     }
     /* End Navbar */
-    /* Start Landing */
-    .landing .icon-arrow {
-        font-size: 26px;
-    }
-    .landing .carousel-indicators [data-bs-target] {
-        width: 20px;
-        height: 2px;
-    }
-    .landing .icon-arrow {
-        font-size: 22px;
-    }
-    .landing .carousel-indicators [data-bs-target] {
-        width: 15px;
-        height: 2px;
-    }
-    /* End Landing */
     /* Start About Survey */
     .about-survey .about-survey-text .about-survey-heading {
         font-size: 40px;
@@ -275,3 +293,13 @@ body {
     /* End About Survey */
 }
 /* End Media Query */
+
+
+
+
+
+
+/* Test */
+.test {
+    border: 1px solid #000;
+}
