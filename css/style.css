@@ -365,6 +365,22 @@ body {
     font-size: 18px;
 }
 /* End Footer In All Pages */
+/* Start Home Page */
+/* Start Navbar */
+.user {
+    margin-left: 5px;
+}
+.rotate-down {
+    margin-right: 5px;
+    transform: rotate(0);
+    transition: 0.5s;
+}
+.rotate-down:hover {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+/* End Navbar */
+/* End Home Page */
 
 
 
