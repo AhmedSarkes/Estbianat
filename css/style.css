@@ -1,5 +1,6 @@
 :root {
     --main-color: #396d0c;
+    --btn-color: #88b85e;
     --part-color: #f5fdee;
     --section-color: #f8faf4;
 }
@@ -26,11 +27,25 @@ body {
 .nav-contact .lang-btn {
     border: none;
 }
-.navbar .logo {
+.navbar {
+    transition: 0.5s;
+}
+.navbar-fixed {
+    background: #f8faf4;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    transition: 0.5s;
+}
+.navbar-fixed .container{
+    max-width: 90%;
+}
+.logo {
     width: 120px;
 }
 .navbar .navbar-toggler {
-    font-size: 25px;
+    font-size: 22px;
 }
 .navbar .navbar-toggler[aria-expanded="true"] {
     border-color: var(--main-color);
@@ -42,8 +57,7 @@ body {
 }
 .navbar .nav-item .nav-link {
     color: #000;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 0 10px;
 }
 .navbar .nav-item .nav-link.active {
     background-color: var(--part-color);
@@ -140,9 +154,7 @@ body {
     position: relative;
 }
 .about-survey-body .left-side img {
-    width: 500px;
     border-radius: 0 20px 20px 0;
-    margin-left: -125px;
 }
 .about-survey-body .left-side img:last-of-type {
     position: absolute;
@@ -153,15 +165,15 @@ body {
     text-align: end;
     margin-top: 0;
 }
- .surveys-btn {
-    background-color: var(--main-color);
+.surveys-btn {
+    background-color: var(--btn-color);
     color: #FFF;
     padding: 15px;
-    opacity: 0.6;
     transition: 0.3s;
 }
-.about-survey-body .right-side .surveys-btn:hover {
-    opacity: 1;
+.surveys-btn:hover {
+    background-color: var(--main-color);
+    color: #FFF;
     transition: 0.5s;
 }
 .about-survey-body .right-side .add-survey {
@@ -178,8 +190,9 @@ body {
 }
 /* End About Survey */
 /* Start Outer Survey */
-.outer-survey {
+.bg-section {
     background-color: var(--section-color);
+    transition: 0.4s;
 }
 .hand-holding {
     color: var(--main-color);
@@ -199,18 +212,179 @@ body {
     border-radius: 50%;
     position: relative;
 }
-.how-icon::after {
+.how-make-survey-col::before {
+    content: '- - - - - - - - - -';
+    color: #FFF;
+    font-size: 40px;
+    width: 100%;
     position: absolute;
-    content: '';
-    color: #000;
-    width: 50px;
-    height: 100px;
-    right: 0;
-    background-color: #000;
-    top: 0;
+    display: flex;
+    right: 50%;
+    height: 0;
+    top: 21%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.how-make-survey-col {
+    padding: 0px 30px 0 30px;
 }
 /* End How To Make A Survey */
-
+/* Start Collect Points */
+.collect-points {
+    border-radius: 20px;
+    margin: 150px 0 100px 0;
+}
+.heading-collect {
+    font-size: 30px;
+}
+/* End Collect Points */
+/* Start Articles */
+.card-hover {
+    transition: 0.6s;
+    padding: 0;
+    border-radius: 10px;
+}
+.card-hover:hover {
+    box-shadow: 1px 1px 20px #000;
+    transition: 0.6s;
+}
+.card-img {
+    position: relative;
+}
+.card-img img {
+    border-radius: 10px;
+}
+.card-img .date {
+    background-color: var(--main-color);
+    color: #FFF;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 3;
+}
+.card-body {
+    direction: rtl;
+}
+.title {
+    font-size: 16px;
+}
+.pra {
+    font-size: 14px;
+}
+.more-div {
+    color: var(--btn-color);
+}
+.more-div:hover {
+    color: var(--main-color);
+}
+.read-more {
+    margin-left: 5px;
+}
+/* End Articles */
+/* Start Questions */
+.question-tap {
+    border-radius: 30px;
+    padding: 30px;
+    transition: 0.8s;
+}
+.question {
+    text-align: end;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.question-icon {
+    font-size: 36px;
+    color: var(--btn-color);
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.question-pra {
+    display: none;
+}
+.questions .active {
+    background-color: var(--section-color);
+    margin-bottom: 30px;
+}
+.questions .active .question-icon {
+    transform: rotate(-135deg);
+    transition: 0.5s;
+}
+.questions .active .question {
+    margin-bottom: 10px;
+}
+/* End Questions */
+/* Start Companies */
+/* Start Swiper */
+.mySwiper-company {
+    margin-top: 50px;
+}
+.companies .swiper {
+    width: 100%;
+    height: 100%;
+}
+.companies .swiper-slide img {
+    display: block;
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-prev {
+    left: 5%;
+    background-color: transparent;
+}
+.swiper-button-next {
+    right: 5%;
+    background-color: transparent;
+}
+/* End Companies */
+/* Start Footer In All Pages*/
+.footer {
+    background-color: var(--section-color);
+}
+.footer form input {
+    direction: rtl;
+}
+.footer .heading {
+    color: #000;
+    font-size: 22px;
+}
+.footer .links a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.footer .links a:hover {
+    opacity: 1;
+}
+.footer .color-circle {
+    background-color: var(--btn-color);
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.footer .social-media a {
+    background-color: var(--main-color);
+    opacity: 0.7;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.footer .social-media a:hover {
+    opacity: 1;
+}
+.footer .hr {
+    height: 1px;
+    background-color: var(--main-color);
+}
+.footer .copyright {
+    color: var(--main-color);
+    font-size: 18px;
+}
+/* End Footer In All Pages */
 
 
 
@@ -236,10 +410,17 @@ body {
 
 /* Start Media Query */
 @media (max-width: 1400px) {
+    /* Start Navbar */
+    .logo {
+        width: 100px;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 15px;
+    }
+    /* End Navbar */
     /* Start About Survey */
-    .about-survey-body .left-side img {
+    .about-survey-body .left-side img:first-of-type {
         width: 450px;
-        margin-left: -80px;
     }
     .about-survey-body .left-side img:last-of-type {
         top: 30%;
@@ -249,25 +430,61 @@ body {
         margin-top: 0;
     }
     /* End About Survey */
+    /* Start How To Make A Survey */
+    .how-make-survey-col::before {
+        content: '- - - - - - - -';
+    }
+    /* End How To Make A Survey */
 }
 @media (max-width: 1200px) {
+    /* Start Navbar */
+    .logo {
+        width: 100px;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 15px;
+        margin: 0 5px 0 5px;
+    }
+    .navbar form .login {
+        font-size: 15px;
+        padding: 10px 5px 10px 5px;
+    }
+    .navbar form .add-survey {
+        font-size: 15px;
+        margin-right: 19px;
+        padding: 10px 5px 10px 5px;
+    }
+    /* End Navbar */
     /* Start About Survey */
-    .about-survey-body .left-side img {
+    .about-survey-body .left-side {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .about-survey-body .left-side img:first-of-type {
         width: 400px;
-        margin-left: -123px;
+        top: 20%;
+        position: absolute;
     }
     .about-survey-body .left-side img:last-of-type {
-        top: 25%;
-        left: 40%;
+        width: 350px;
+        top: 40%;
+        left: 30%;
     }
     .about-survey-body .right-side {
         margin-top: 0;
     }
     /* End About Survey */
+    /* Start How To Make A Survey */
+    .how-make-survey-col::before {
+        content: '- - - - - -';
+        top: 20%;
+    }
+    /* End How To Make A Survey */
 }
 @media (max-width: 992px) {
     /* Start Navbar */
-    .navbar .logo {
+    .logo {
         width: 100px;
     }
     .navbar {
@@ -279,7 +496,7 @@ body {
         top: 100%;
         right: 50%;
         transform: translateX(50%);
-        z-index: 9999;
+        z-index: 3;
     
     }
     /* End Navbar */
@@ -287,17 +504,35 @@ body {
     .heading {
         font-size: 36px;
     }
+    .about-survey-body .left-side {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
     .about-survey-body .left-side img:first-of-type {
-        margin-left: -13px;
+        position: relative;
+        top: 0;
+        left: -5%;
     }
     .about-survey-body .left-side img:last-of-type {
         top: 60%;
-        left: 60%;
+        left: 40%;
     }
     .about-survey-body .right-side {
-        margin-top: 190px;
+        margin-top: 160px;
     }
     /* End About Survey */
+    /* Start How To Make A Survey */
+    .how-make-survey-col::before {
+        content: none;
+    }
+    /* End How To Make A Survey */
+    /* Start Footer */
+    .footer .copyright {
+        font-size: 16px;
+    }
+    /* End Footer */
 }
 @media (max-width: 768px) {
     /* Start Navbar */
@@ -313,42 +548,62 @@ body {
         font-size: 30px;
     }
     .about-survey-body .left-side {
-        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-survey-body .left-side img:first-of-type {
+        width: 320px;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     .about-survey-body .left-side img:last-of-type {
+        width: 300px;
         top: 60%;
-        left: 47%;
+        left: 30%;
     }
     .about-survey-body .right-side {
-        margin-top: 170px;
+        margin-top: 140px;
     }
     /* End About Survey */
+    /* Start Footer */
+    .footer .copyright {
+        font-size: 14px;
+    }
+    /* End Footer */
 }
 @media (max-width: 540px) {
     /* Start About Survey */
-    .about-survey-body .left-side img {
-        width: 350px;
+    .about-survey-body .left-side img:first-of-type {
+        width: 300px;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     .about-survey-body .left-side img:last-of-type {
-        top: 60%;
-        left: 50%;
+        width: 280px;
+        top: 50%;
+        left: 35%;
     }
     .about-survey-body .right-side {
-        margin-top: 150px;
+        margin-top: 140px;
     }
     /* End About Survey */
 }
 @media (max-width: 480px) {
     /* Start About Survey */
     .about-survey-body .left-side img {
-        width: 280px;
+        width: 260px;
     }
     .about-survey-body .left-side img:last-of-type {
+        width: 230px;
         top: 60%;
-        left: 54%;
+        left: 20%;
     }
     .about-survey-body .right-side {
-        margin-top: 120px;
+        margin-top: 90px;
     }
     /* End About Survey */
 }
@@ -363,14 +618,14 @@ body {
     /* End Navbar */
     /* Start About Survey */
     .heading {
-        font-size: 40px;
-    }
-    .about-survey-body .left-side img {
-        width: 230px;
+        font-size: 26px;
     }
     .about-survey-body .left-side img:last-of-type {
-        top: 60%;
-        left: 60%;
+        width: 200px;
+        left: 17%;
+    }
+    .about-survey-body .right-side {
+        margin-top: 75px;
     }
     .about-survey-body .right-side .add-survey,
     .about-survey-body .right-side .surveys {
@@ -387,13 +642,3 @@ body {
     /* End About Survey */
 }
 /* End Media Query */
-
-
-
-
-
-
-/* Test */
-.test {
-    border: 1px solid #000;
-}
