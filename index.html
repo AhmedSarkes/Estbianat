@@ -91,7 +91,8 @@
           <form
             class="col-lg-4 col-12 mt-2 d-flex justify-content-center align-items-center flex-row-reverse mb-4 mb-lg-0"
           >
-            <button class="btn login" onclick="this.blur();" type="button" value="">
+            <button href="pages/home.html" class="btn login" onclick="this.blur();" type="button" value="">
+              
               تسجيل الدخول
             </button>
             <button class="btn add-survey" onclick="this.blur();" type="button" value="">
@@ -103,16 +104,72 @@
     </nav>
     <!-- End Navbar -->
     <!-- Start Landing -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
-        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
-        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
-        <div class="swiper-slide"><img src="images/landing.png" alt="" /></div>
+    <div
+      id="carouselLandingWithCaptions"
+      class="carousel carousel-landing slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselLandingWithCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselLandingWithCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselLandingWithCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/01.jpg" class="d-block w-100" alt="" />
+          <div class="carousel-caption d-block">
+            <h5>استبيان</h5>
+            <p>أنشئ استبيانك أداة بسيطة وفعالة لعمل الاستبيان</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/01.jpg" class="d-block w-100" alt="" />
+          <div class="carousel-caption d-block">
+            <h5>استبيان</h5>
+            <p>أنشئ استبيانك أداة بسيطة وفعالة لعمل الاستبيان</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/01.jpg" class="d-block w-100" alt="" />
+          <div class="carousel-caption d-block">
+            <h5>استبيان</h5>
+            <p>أنشئ استبيانك أداة بسيطة وفعالة لعمل الاستبيان</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselLandingWithCaptions"
+        data-bs-slide="prev"
+      >
+        <i class="fa-solid fa-circle-left" aria-hidden="true"></i>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselLandingWithCaptions"
+        data-bs-slide="next"
+      >
+        <i class="fa-solid fa-circle-right" aria-hidden="true"></i>
+      </button>
     </div>
     <!-- End Landing -->
     <!-- Start About Survey -->

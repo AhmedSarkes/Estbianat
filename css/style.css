@@ -89,50 +89,30 @@ body {
 }
 /* End Navbar In All Pages */
 /* Start Landing */
-.swiper {
-    width: 100%;
-    height: 100%;
+.carousel-Landing .carousel-item img {
+    height: 450px;
+    filter: contrast(0.5);
 }
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.carousel-caption {
+    bottom: 35%;
 }
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: var(--main-color);
-    background-color: #FFF;
-    font-size: 1.5rem;
+.carousel-caption h5 {
+    color: var(--btn-color);
+    font-size: 45px;
     font-weight: bold;
-    flex: 0 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-.swiper-button-next {
-    right: 10%;
+.carousel-caption p {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
 }
-.swiper-button-prev {
-    left: 10%;
+.carousel-landing .carousel-indicators [data-bs-target] {
+    background-color: var(--btn-color);
+    height: 4px;
 }
-.swiper-pagination-bullet {
-    width: 30px;
-    height: 3px;
-    border-radius: 0;
-    background-color: #FFF;
+.carousel-control-prev svg,
+.carousel-control-next svg {
+    font-size: 36px;
 }
 /* End Landing */
 /* Start About Survey */
@@ -407,7 +387,6 @@ body {
 
 
 
-
 /* Start Media Query */
 @media (max-width: 1400px) {
     /* Start Navbar */
@@ -500,6 +479,21 @@ body {
     
     }
     /* End Navbar */
+    /* Start Landing */
+    .carousel-caption h5 {
+        font-size: 40px;
+    }
+    .carousel-caption p {
+        font-size: 20px;
+    }
+    .carousel-indicators [data-bs-target] {
+        height: 3px;
+    }
+    .carousel-control-prev svg,
+    .carousel-control-next svg {
+        font-size: 28px;
+    }
+    /* End Landing */
     /* Start About Survey */
     .heading {
         font-size: 36px;
@@ -543,6 +537,18 @@ body {
         font-size: 20px;
     }
     /* End Navbar */
+    /* Start Landing */
+    .carousel-caption h5 {
+        font-size: 30px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
+    .carousel-control-prev svg,
+    .carousel-control-next svg {
+        font-size: 22px;
+    }
+    /* End Landing */
     /* Start About Survey */
     .heading {
         font-size: 30px;
