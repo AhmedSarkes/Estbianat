@@ -299,24 +299,16 @@ body {
 /* Start Swiper */
 .mySwiper-company {
     margin-top: 50px;
+    justify-content: center;
 }
 .companies .swiper {
     width: 100%;
     height: 100%;
 }
 .companies .swiper-slide img {
-    display: block;
     width: 150px;
     height: 100%;
     object-fit: cover;
-}
-.swiper-button-prev {
-    left: 5%;
-    background-color: transparent;
-}
-.swiper-button-next {
-    right: 5%;
-    background-color: transparent;
 }
 /* End Companies */
 /* Start Footer In All Pages*/
@@ -367,20 +359,47 @@ body {
 /* End Footer In All Pages */
 /* Start Home Page */
 /* Start Navbar */
-.user {
-    margin-left: 5px;
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transition: 0.3s;
 }
-.rotate-down {
-    margin-right: 5px;
+.dropdown .profile svg:first-of-type {
+    margin-right: 10px;
+}
+.dropdown .profile svg:last-of-type {
+    margin-left: 10px;
+}
+.dropdown .profile[aria-expanded="false"] svg:first-of-type {
     transform: rotate(0);
-    transition: 0.5s;
+    transition: 0.2s;
 }
-.rotate-down:hover {
+.dropdown .profile[aria-expanded="true"] svg:first-of-type {
     transform: rotate(180deg);
-    transition: 0.5s;
+    transition: 0.2s;
+}
+.dropdown .profile {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    transition: 0.3s;
+}
+.dropdown .profile:hover {
+    background-color: #2ca061;
+    color: #FFF;
+    border: #2ca061;
+    transition: 0.3s;
+}
+.dropdown .dropdown-menu .item {
+    color: #000;
+    transition: 0.3s;
+}
+.dropdown .dropdown-menu .item:hover {
+    color: #6ad89c;
+    transition: 0.3s;
 }
 /* End Navbar */
 /* End Home Page */
+
+
 
 
 

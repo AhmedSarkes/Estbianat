@@ -716,20 +716,21 @@
       <!-- End Heading -->
       <!-- End Head -->
       <!-- Start Body - Swiper -->
+      <!-- <div class="container"> -->
       <div class="swiper mySwiper-company mt-5 mb-5">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/01.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/02.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/03.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/04.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/05.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/06.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/07.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/08.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/09.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/10.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/11.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/12.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/01.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/02.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/03.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/04.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/05.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/06.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/07.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/08.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/09.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/10.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/11.jpg" alt=""></div>
+          <div class="swiper-slide d-flex justify-content-center"><img src="images/12.jpg" alt=""></div>
         </div>
       </div>
       <!-- End Body - Swiper -->
@@ -788,19 +789,19 @@
           </div>
           <div class="col-12 col-lg-4 mb-4 mt-4 mt-lg-0">
             <h5 class="heading mb-4">تواصل معنا</h5>
-            <div class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3">
+            <div class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3">
               <a class="text-decoration-none text-dark mt-0 mb-0 m-2" href="mailto:ErtKazArt@gmail.com">ErtKazArt@gmail.com</a>
               <span class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3">
                 <i class="fa-solid fa-envelope"></i>
               </span>
             </div>
-            <div class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3">
+            <div class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3">
               <a class="text-decoration-none text-dark mt-0 mb-0 m-2" href="tel:+96605124123">+96605124123</a>
               <span class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3">
                 <i class="fa-solid fa-phone-flip"></i>
               </span>
             </div>
-            <div class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3">
+            <div class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3">
               <p class="mt-0 mb-0 m-2">Street, Ali, Al Eyad</p>
               <span class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3">
                 <i class="fa-solid fa-location-dot"></i>
@@ -839,5 +840,35 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      // Start Swiper
+      var swiper = new Swiper(".mySwiper-company", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          390: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          },
+          640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          },
+          768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          },
+          1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+          },
+        },
+      });
+      // End Swiper
+    </script>
   </body>
 </html>
