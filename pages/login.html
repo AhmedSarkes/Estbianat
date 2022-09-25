@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>استبيانات</title>
+    <title>تسجيل الدخول</title>
     <link rel="icon" href="../images/logo.png" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -12,13 +12,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="../build/css/intlTelInput.css">
+    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -55,53 +56,84 @@
         </button>
         <div class="collapse navbar-collapse flex-row-reverse w-100" id="main">
           <ul
-            class="navbar-nav d-flex justify-content-end align-items-center flex-lg-row-reverse col-lg-8 col-12"
+            class="navbar-nav d-flex justify-content-center align-items-center text-center flex-lg-row-reverse col-lg-8 col-12"
           >
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link active" href="#">الرئيسية</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">عن الاستبيان</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#"> استبيانات </a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">أسئلة متكررة</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">تواصل معنا</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">المقالات</a>
             </li>
           </ul>
           <form
-            class="col-lg-4 col-12 mt-2 d-flex justify-content-center align-items-center flex-row-reverse mb-4 mb-lg-0"
+            class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
           >
-            <button class="btn profile" onclick="this.blur();" type="button" value="">
-              الملف الشخصي
-            </button>
-            <button class="btn add-survey" onclick="this.blur();" type="button" value="">
+          <a href="pages/home.html" class="btn login" onclick="this.blur();" type="button" value="">
+            تسجيل الدخول
+          </a>
+            <button
+              class="btn add-survey survey-btn-index"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
               إضافة طلب استبيان
             </button>
           </form>
         </div>
       </div>
     </nav>
+    </nav>
     <!-- End Navbar -->
+    <!-- Start Form Login -->
+    <div class="login-form">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-8 d-flex justify-content-center">
+            <img class="logo" src="../images/logo.png" alt="" />
+          </div>
+          <div class="heading-form col-8">
+            <h1 class="login-heading-welcome">مرحبا بك!</h1>
+            <h2 class="login-heading-login">تسجيل دخول</h2>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+          </div>
+          <form class="form-phone col-8" action="">
+            <label for="phone" class="form-label" required>رقم الجوال</label>
+            <div class="input-group mb-3">
+              <input type="tel" class="form-control phone-number" id="phone" required placeholder="برجاء أدخل رقم الجوال">
+            </div>
+            <div class="container-ps">
+              <label for="pw" class="form-label">كلمة المرور</label>
+              <input type="password" class="form-control password" id="pw" required placeholder="برجاء أدخل كلمة المرور">
+              <span class="show-pw">
+                <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+            </div>
+            <a class="forget-pw d-flex justify-content-end col-12" href="#"><span>هل نسيت كلمة المرور؟</span></a>
+            <div class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-4 mb-4">
+              <button class="btn login col-6">تسجيل دخول</button>
+            </div>
+            <div class="rigester-container d-flex justify-content-center align-items-center">
+              <p>ليس لديك حساب؟<span><a href="">تسجيل جديد</a></span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Form Login -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">
@@ -205,6 +237,46 @@
     <script src="../js/all.min.js"></script>
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../build/js/intlTelInput.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+      var input = document.querySelector("#phone"),
+      errorMsg = document.querySelector("#error-msg"),
+      validMsg = document.querySelector("#valid-msg");
+
+      // here, the index maps to the error code returned from getValidationError - see readme
+      var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+      // initialise plugin
+      var iti = window.intlTelInput(input, {
+        utilsScript: "../build/js/utils.js?1638200991544"
+      });
+
+      var reset = function() {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+        validMsg.classList.add("hide");
+      };
+
+      // on blur: validate
+      input.addEventListener('blur', function() {
+        reset();
+        if (input.value.trim()) {
+          if (iti.isValidNumber()) {
+            validMsg.classList.remove("hide");
+          } else {
+            input.classList.add("error");
+            var errorCode = iti.getValidationError();
+            errorMsg.innerHTML = errorMap[errorCode];
+            errorMsg.classList.remove("hide");
+          }
+        }
+      });
+
+      // on keyup / change flag: reset
+      input.addEventListener('change', reset);
+      input.addEventListener('keyup', reset);
+    </script>
   </body>
 </html>
