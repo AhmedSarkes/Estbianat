@@ -97,7 +97,7 @@
     </nav>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Form Login -->
+    <!-- Start Form Forget Password -->
     <div class="login-form">
       <div class="container d-flex justify-content-center align-items-center">
         <div class="row d-flex justify-content-center align-items-center">
@@ -105,35 +105,24 @@
             <img class="logo" src="../images/logo.png" alt="" />
           </div>
           <div class="heading-form col-8">
-            <h1 class="login-heading-welcome">مرحبا بك!</h1>
+            <h1 class="login-heading-welcome">هل نسيت كلمة المرور</h1>
             <h2 class="login-heading-login">تسجيل دخول</h2>
             <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن</p>
           </div>
-          <form class="form-phone col-8" action="register.html">
-            <label for="phone" class="form-label" required>رقم الجوال</label>
-            <div class="input-group mb-3">
-              <input type="tel" class="form-control phone-number" id="phone" required placeholder="برجاء أدخل رقم الجوال">
+          <form class="form-phone col-8" action="send-code.html">
+            <label for="phone" class="form-label">رقم الجوال</label>
+            <div class="input-group mb-4">
+              <input type="tel" class="form-control phone-number" id="phone" value="" required placeholder="برجاء أدخل رقم الجوال">
             </div>
-            <div class="container-ps">
-              <label for="password" class="form-label">كلمة المرور</label>
-              <input type="password" class="form-control password" id="password" required placeholder="برجاء أدخل كلمة المرور">
-              <span class="show-pw text-black-50">
-                <i class="fa-regular fa-eye-slash"></i>
-                <i class="fa-regular fa-eye"></i>
-              </span>
-            </div>
-            <a class="forget-pw d-flex justify-content-end col-12" href="forget-pw.html"><span>هل نسيت كلمة المرور؟</span></a>
-            <div class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-              <button class="btn login col-6">تسجيل دخول</button>
-            </div>
-            <div class="register-container d-flex justify-content-center align-items-center">
-              <p>ليس لديك حساب؟<span><a href="register.html">تسجيل جديد</a></span></p>
+            <div class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-4">
+              <button class="btn login col-6">ارسل الكود</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <!-- End Form Login -->
+    <!-- End Form Forget Password -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>استبيانات</title>
+    <title>تسجيل الدخول</title>
     <link rel="icon" href="../images/logo.png" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -12,13 +12,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="../build/css/intlTelInput.css">
+    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -55,53 +56,254 @@
         </button>
         <div class="collapse navbar-collapse flex-row-reverse w-100" id="main">
           <ul
-            class="navbar-nav d-flex justify-content-end align-items-center flex-lg-row-reverse col-lg-8 col-12"
+            class="navbar-nav d-flex justify-content-center align-items-center text-center flex-lg-row-reverse col-lg-8 col-12"
           >
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link active" href="#">الرئيسية</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">عن الاستبيان</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#"> استبيانات </a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">أسئلة متكررة</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">تواصل معنا</a>
             </li>
-            <li
-              class="nav-item d-flex justify-content-center align-items-center text-center"
-            >
+            <li class="nav-item">
               <a class="nav-link" href="#">المقالات</a>
             </li>
           </ul>
           <form
-            class="col-lg-4 col-12 mt-2 d-flex justify-content-center align-items-center flex-row-reverse mb-4 mb-lg-0"
+            class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
           >
-            <button class="btn profile" onclick="this.blur();" type="button" value="">
-              الملف الشخصي
-            </button>
-            <button class="btn add-survey" onclick="this.blur();" type="button" value="">
+          <a href="pages/home.html" class="btn login" onclick="this.blur();" type="button" value="">
+            تسجيل الدخول
+          </a>
+            <button
+              class="btn add-survey survey-btn-index"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
               إضافة طلب استبيان
             </button>
           </form>
         </div>
       </div>
     </nav>
+    </nav>
     <!-- End Navbar -->
+    <!-- Start Form Register -->
+    <div class="register-form">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-8 d-flex justify-content-center">
+            <img class="logo" src="../images/logo.png" alt="" />
+          </div>
+          <div class="heading-form col-8">
+            <h1 class="login-heading-welcome">مرحبا بك!</h1>
+            <h2 class="login-heading-login">تسجيل دخول</h2>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+          </div>
+          <form class="form-phone col-8" action="register-2.html">
+            <div class="container-user">
+              <label for="user" class="form-label">اسم المستخدم</label>
+              <input type="text" class="form-control user" value="" id="user" required placeholder="برجاء أدخل اسم المستخدم">
+            </div>
+            <div class="container-phone">
+              <label for="phone" class="form-label" required>رقم الجوال</label>
+              <div class="input-group mb-3">
+                <input type="tel" class="form-control phone-number" value="" id="phone" required placeholder="برجاء أدخل رقم الجوال">
+              </div>
+            </div>
+            <div class="container-ps mt-3">
+              <label for="password" class="form-label">كلمة المرور</label>
+              <input type="password" name="" value="" class="form-control password" id="password" placeholder="برجاء ادخل كلمة المرور الجديدة" required>
+              <span class="show-pw text-black-50">
+                  <i class="fa-regular fa-eye-slash"></i>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+            </div>
+            <div class="container-ps mt-3">
+              <label for="confirm-password" class="form-label">تأكيد كلمة المرور</label>
+              <input type="password" name="" value="" class="form-control confirm-password" id="confirm-password" placeholder="برجاء ادخل تأكيد كلمة المرور الجديدة" required>
+                <span class="show-pw text-black-50">
+                    <i class="fa-regular fa-eye-slash"></i>
+                    <i class="fa-regular fa-eye"></i>
+                </span>
+            </div>
+            <div class="container-gender d-flex align-items-center col-lg-6 col-md-9 col-12 mt-3">
+              <label for="gender" class="form-label col-lg-6 col-4">نوع الجنس</label>
+              <input type="radio" name="gender" class="form-control" id="male">
+              <label for="male" class="form-label">ذكر</label>
+              <input type="radio" name="gender" class="form-control" id="female">
+              <label for="female" class="form-label">انثى</label>
+            </div>
+            <div class="container-email mt-3">
+              <label for="email" class="form-label">البريد الالكتروني</label>
+              <input type="email" class="form-control email" value="" id="email" required placeholder="برجاء أدخل البريد الالكتروني">
+            </div>
+            <div class="select country mt-3">
+              <label class="form-label">الدولة</label>
+              <select class="form-select" required>
+                <option value="" class="text-black-50" disabled selected hidden>برجاء اختيار الدولة</option>
+                <option value=""></option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="select city mt-3">
+              <label class="form-label">المدينة</label>
+              <select class="form-select" required>
+                <option value="" disabled selected hidden>برجاء اختيار المدينة</option>
+                <option value=""></option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="select area mt-3">
+              <label class="form-label">المنطقة</label>
+              <select class="form-select" required>
+                <option value="" disabled selected hidden>برجاء اختيار المنطقة</option>
+                <option value=""></option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container-date mt-3">
+              <label for="date" class="form-label">يوم الميلاد</label>
+              <input type="date" class="form-control date" value="" id="date" required placeholder="مثال 16/6/1985">
+            </div>
+            <div class="container-date mt-3">
+              <label for="date" class="form-label">يوم الميلاد</label>
+              <input type="text" class="form-control date" value="" id="date" required placeholder="مثال 16/6/1985">
+            </div>
+            <div class="container-average mt-3">
+              <label for="average" class="form-label">متوسط الدخل</label>
+              <input type="number" class="form-control average" value="" id="average" required placeholder="برجاء أدخل متوسط الدخل">
+            </div>
+            <div class="conatiner-class mt-3">
+              <label for="class" class="form-label col-12">الفئة</label>
+              <div class="row d-flex justify-content-around col-12 mt-3 me-0 ms-0">
+                <div class="student col-4 d-flex justify-content-lg-center justify-content-end align-items-center">
+                  <input type="radio" name="class" class="form-control" id="student">
+                  <label for="student" class="form-label">طالب</label>
+                </div>
+                <div class="employer col-4 d-flex justify-content-lg-center justify-content-end align-items-center">
+                  <input type="radio" name="class" class="form-control" id="employer">
+                  <label for="employer" class="form-label">موظف</label>
+                </div>
+                <div class="graduate col-4 d-flex justify-content-lg-center justify-content-end align-items-center">
+                  <input type="radio" name="class" class="form-control" id="graduate">
+                  <label for="graduate" class="form-label">خريج</label>
+                </div>
+              </div>
+              <div class="container-student" id="student" style="display: none;">
+                <div class="select student-inp mt-3">
+                  <label class="form-label">المرحلة الدراسية</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>برجاء اختيار المرحلة الدراسية</option>
+                    <option value="primary">ابتدائي</option>
+                    <option value="middle">متوسط</option>
+                    <option value="high">ثانوي</option>
+                    <option value="university">جامعي</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div class="container-employer" id="employer" style="display: none;">
+                <div class="select employer-inp mt-3">
+                  <label class="form-label">الوظيفة</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>برجاء اختيار الوظيفة</option>
+                    <option value="teacher">معلم</option>
+                    <option value="doctor">طبيب</option>
+                    <option value="lower">محامي</option>
+                    <option value="other">اخرى</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="container-other mt-3">
+                  <label for="other" class="form-label">اخرى</label>
+                  <input type="text" class="form-control other" id="other" value="" required placeholder="برجاء أدخل الوظيفة">
+                </div>
+                <div class="select lang-inp mt-3">
+                  <label class="form-label">الوظيفة</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>برجاء اختيار الوظيفة</option>
+                    <option value="arabic">اللغة العربية</option>
+                    <option value="english">اللغة الإنجليزية</option>
+                    <option value="french">اللغة الفرنسية</option>
+                    <option value="other">اخرى</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="container-other mt-3">
+                  <label for="other" class="form-label">اللغات الاخرى</label>
+                  <input type="text" class="form-control other" value="" id="other" required placeholder="برجاء أدخل اللغات الاخرى">
+                </div>
+              </div>
+              <div class="container-graduate" id="graduate" style="display: none;">
+                <div class="select graduate-inp mt-3">
+                  <label class="form-label">الجامعة</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>برجاء اختيار الجامعة</option>
+                    <option value="qassim">القصيم</option>
+                    <option value="saud">سعود</option>
+                    <option value="noura">نورة</option>
+                    <option value="albaha">الباحة</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="container-guardian d-flex align-items-center col-lg-6 col-md-9 col-12 mt-3">
+              <label for="guardian" class="form-label col-lg-6 col-4">هل أنت ولي أمر؟</label>
+              <input type="radio" name="guardian" class="form-control" id="yes_1">
+              <label for="yes_1" class="form-label">نعم</label>
+              <input type="radio" name="guardian" class="form-control" id="no_1">
+              <label for="no_1" class="form-label">لا</label>
+            </div>
+            <div class="container-children mt-3">
+              <label for="children" class="form-label">عدد الأولاد</label>
+              <input type="number" class="form-control children" value="" id="children" required placeholder="الرجاء أدخل عدد الأولاد">
+            </div>
+            <div class="container-disease d-flex align-items-center col-lg-6 col-md-9 col-12 mt-3">
+              <label for="disease" class="form-label col-lg-6 col-4">هل أنت مريض؟</label>
+              <input type="radio" name="disease" class="form-control" id="yes_2">
+              <label for="yes_2" class="form-label">نعم</label>
+              <input type="radio" name="disease" class="form-control" id="no_2">
+              <label for="no_2" class="form-label">لا</label>
+            </div>
+            <div class="select container-disease-name mt-3">
+              <label for="diseaseName" class="form-label">نوع المرض</label>
+                <select class="form-select" id="diseaseName" required>
+                  <option value="" disabled selected hidden>برجاء اختيار الجامعة</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container-knowledge d-flex align-items-center col-lg-8 col-md-9 col-12 mt-3">
+              <label for="knowledge" class="form-label col-10">هل لديك معرفة بأحد من ذوي الاحتياجات الخاصة؟</label>
+              <input type="radio" name="knowledge" class="form-control" id="yes_3">
+              <label for="yes_3" class="form-label">نعم</label>
+              <input type="radio" name="knowledge" class="form-control" id="no_3">
+              <label for="no_3" class="form-label">لا</label>
+            </div>
+            <div class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-5">
+              <button class="btn login col-6">التالي</button>
+            </div>
+            <div class="register-container d-flex justify-content-center align-items-center">
+              <p>لديك حساب بالفعل؟<span><a href="login.html">تسجيل دخول</a></span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Form Register -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">
@@ -205,6 +407,46 @@
     <script src="../js/all.min.js"></script>
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../build/js/intlTelInput.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+      var input = document.querySelector("#phone"),
+      errorMsg = document.querySelector("#error-msg"),
+      validMsg = document.querySelector("#valid-msg");
+
+      // here, the index maps to the error code returned from getValidationError - see readme
+      var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+      // initialise plugin
+      var iti = window.intlTelInput(input, {
+        utilsScript: "../build/js/utils.js?1638200991544"
+      });
+
+      var reset = function() {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+        validMsg.classList.add("hide");
+      };
+
+      // on blur: validate
+      input.addEventListener('blur', function() {
+        reset();
+        if (input.value.trim()) {
+          if (iti.isValidNumber()) {
+            validMsg.classList.remove("hide");
+          } else {
+            input.classList.add("error");
+            var errorCode = iti.getValidationError();
+            errorMsg.innerHTML = errorMap[errorCode];
+            errorMsg.classList.remove("hide");
+          }
+        }
+      });
+
+      // on keyup / change flag: reset
+      input.addEventListener('change', reset);
+      input.addEventListener('keyup', reset);
+    </script>
   </body>
 </html>

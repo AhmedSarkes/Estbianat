@@ -18,7 +18,6 @@
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
     rel="stylesheet"
     />
-    <link rel="stylesheet" href="../build/css/intlTelInput.css">
     <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -97,7 +96,7 @@
     </nav>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Form Login -->
+    <!-- Start Form Send Code -->
     <div class="login-form">
       <div class="container d-flex justify-content-center align-items-center">
         <div class="row d-flex justify-content-center align-items-center">
@@ -105,35 +104,38 @@
             <img class="logo" src="../images/logo.png" alt="" />
           </div>
           <div class="heading-form col-8">
-            <h1 class="login-heading-welcome">مرحبا بك!</h1>
+            <h1 class="login-heading-welcome">هل نسيت كلمة المرور</h1>
             <h2 class="login-heading-login">تسجيل دخول</h2>
             <p class="text-black-50">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+            <p class="text-black-50">هذا النص هو مثال لنص يمكن</p>
           </div>
-          <form class="form-phone col-8" action="register.html">
-            <label for="phone" class="form-label" required>رقم الجوال</label>
-            <div class="input-group mb-3">
-              <input type="tel" class="form-control phone-number" id="phone" required placeholder="برجاء أدخل رقم الجوال">
+          <form class="form-phone col-8" action="login.html">
+            <label for="code" class="form-label">الكود</label>
+            <input type="number" class="form-control" id="code" placeholder="برجاء ادخل الكود" required>
+            <div class="container-ps mt-3">
+                <label for="password" class="form-label">كلمة المرور الجديدة</label>
+                <input type="password" name="" value="" class="form-control password" id="password" placeholder="برجاء ادخل كلمة المرور الجديدة" required>
+                <span class="show-pw text-black-50">
+                    <i class="fa-regular fa-eye-slash"></i>
+                    <i class="fa-regular fa-eye"></i>
+                  </span>
             </div>
-            <div class="container-ps">
-              <label for="password" class="form-label">كلمة المرور</label>
-              <input type="password" class="form-control password" id="password" required placeholder="برجاء أدخل كلمة المرور">
-              <span class="show-pw text-black-50">
-                <i class="fa-regular fa-eye-slash"></i>
-                <i class="fa-regular fa-eye"></i>
-              </span>
+            <div class="container-ps mt-3">
+            <label for="confirm-password" class="form-label">تأكيد كلمة المرور الجديدة</label>
+            <input type="password" name="" value="" class="form-control confirm-password" id="confirm-password" placeholder="برجاء ادخل تأكيد كلمة المرور الجديدة" required>
+                <span class="show-pw text-black-50">
+                    <i class="fa-regular fa-eye-slash"></i>
+                    <i class="fa-regular fa-eye"></i>
+                  </span>
             </div>
-            <a class="forget-pw d-flex justify-content-end col-12" href="forget-pw.html"><span>هل نسيت كلمة المرور؟</span></a>
-            <div class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-4 mb-4">
-              <button class="btn login col-6">تسجيل دخول</button>
-            </div>
-            <div class="register-container d-flex justify-content-center align-items-center">
-              <p>ليس لديك حساب؟<span><a href="register.html">تسجيل جديد</a></span></p>
+            <div class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-4">
+              <button class="btn login col-6">تأكيد</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <!-- End Form Login -->
+    <!-- End Form Send Code -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">
@@ -236,47 +238,6 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/all.min.js"></script>
     <script src="../js/jquery-3.6.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="../build/js/intlTelInput.js"></script>
     <script src="../js/main.js"></script>
-    <script>
-      var input = document.querySelector("#phone"),
-      errorMsg = document.querySelector("#error-msg"),
-      validMsg = document.querySelector("#valid-msg");
-
-      // here, the index maps to the error code returned from getValidationError - see readme
-      var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
-
-      // initialise plugin
-      var iti = window.intlTelInput(input, {
-        utilsScript: "../build/js/utils.js?1638200991544"
-      });
-
-      var reset = function() {
-        input.classList.remove("error");
-        errorMsg.innerHTML = "";
-        errorMsg.classList.add("hide");
-        validMsg.classList.add("hide");
-      };
-
-      // on blur: validate
-      input.addEventListener('blur', function() {
-        reset();
-        if (input.value.trim()) {
-          if (iti.isValidNumber()) {
-            validMsg.classList.remove("hide");
-          } else {
-            input.classList.add("error");
-            var errorCode = iti.getValidationError();
-            errorMsg.innerHTML = errorMap[errorCode];
-            errorMsg.classList.remove("hide");
-          }
-        }
-      });
-
-      // on keyup / change flag: reset
-      input.addEventListener('change', reset);
-      input.addEventListener('keyup', reset);
-    </script>
   </body>
 </html>
