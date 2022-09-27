@@ -709,7 +709,7 @@ option {
   background-color: #fff;
   border-radius: 45px;
 }
-.container-survey div > .card,
+.container-survey a > .card,
 .container-alert a > .card {
   background-color: var(--part-color);
   box-shadow: 0;
