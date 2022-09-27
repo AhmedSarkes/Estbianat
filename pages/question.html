@@ -272,229 +272,245 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Alert -->
-    <div class="container-alert">
-      <div class="container col-8 pb-5">
-        <div
-          class="row g-0 d-flex justify-content-center align-items-center text-center"
-        >
-          <div class="heading-alert mt-5 mb-4">
-            <h1 class="heading">الإشعارات</h1>
-          </div>
-          <a
-            class="card-container feedback-alert text-decoration-none col-7 mb-3 justify-content-center"
-          >
-            <div class="card p-2">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <div class="delete">
-                      <i class="fa-regular fa-trash-can text-danger"></i>
-                      <small>منذ 1 ساعة</small>
-                    </div>
-                    <div>
-                      <p class="text-black-50 text-end">
-                        تم إنهاء الاستبيان <span>(اسم الاستبيان)</span> برجاء
-                        تقييم الاستبيان
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Start Popup Feedback Overlay -->
-          <div class="container-feedback" style="display: none">
-            <div class="container col-6 pb-5">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="heading-overlay mt-5">
-                  <h1 class="h2 text-black mb-3">قم بتقييم تجربتك معنا</h1>
-                  <img src="../images/05.jpg" alt="" />
-                  <p class="mt-4">
-                    تم إنهاء الاستبيان الخاص بك بنجاح برجاء تقييم تجربتك معنا
-                  </p>
-                </div>
-                <form class="heading-overlay">
-                  <label class="col-8 p-2 text-end" for="commit">تعليقك</label>
-                  <textarea
-                    class="col-8 text-end p-2"
-                    name=""
-                    id="commit"
-                    cols="40"
-                    rows="3"
-                    placeholder="برجاء أدخل تقيمك للطلب الخاص بك"
-                  ></textarea>
-                  <div
-                    class="login-container-btn feedback-overlay-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-4"
-                  >
-                    <button
-                      class="btn login send-feedback-btn col-6"
-                      onclick="this.blur();"
-                    >
-                      ارسال التقييم
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- End Popup Feedback Overlay -->
-          <!-- Start Success Feedback -->
-          <div class="container-success-feedback" style="display: none">
-            <div class="container col-lg-4 col-6 pb-5">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="heading-overlay mt-5">
-                  <i class="fa-solid fa-circle-check"></i>
-                  <p class="mt-4">تم إرسال تقيمك بنجاح</p>
-                </div>
-                <div
-                  class="col-12 d-flex justify-content-center align-items-center mt-5 mb-4"
+    <!-- Start Questions -->
+    <div class="questions">
+      <div class="container container-questions">
+        <!-- Start Heading -->
+        <div class="questions-head">
+          <div class="container">
+            <div class="row">
+              <div class="questions-text text-center">
+                <img class="logo mb-5" src="../images/logo.png" alt="" />
+                <h1 class="heading heading-collect">الأسئلة الشائعة</h1>
+                <p
+                  class="questions-pra pra-heading text-black-50 lh-lg mt-4 mb-4"
                 >
-                  <a class="btn feedback-success-btn col-6" href="home.html">
-                    الرجوع للرئيسية
-                  </a>
-                </div>
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى
+                </p>
               </div>
             </div>
           </div>
-          <!-- End Success Feedback -->
-          <a
-            class="card-container text-decoration-none col-7 mb-3 justify-content-center"
-            href="#"
-          >
-            <div class="card p-2">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <div class="delete">
-                      <i class="fa-regular fa-trash-can text-danger"></i>
-                      <small>منذ 1 ساعة</small>
-                    </div>
-                    <div>
-                      <p class="text-black-50 text-end">
-                        تم تعديل الاستبيان بنجاح اضغط لاستكمال الاستبيان
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            class="card-container text-decoration-none col-7 mb-3 justify-content-center"
-            href="#"
-          >
-            <div class="card p-2">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <div class="delete">
-                      <i class="fa-regular fa-trash-can text-danger"></i>
-                      <small>منذ 1 ساعة</small>
-                    </div>
-                    <div>
-                      <p class="text-black-50 text-end">
-                        تم تحديد سعر الاستبيان يرجى دفع قيمته لبدأ الاستبيان
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            class="card-container text-decoration-none col-7 mb-3 justify-content-center"
-          >
-            <div class="card p-2">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <div class="delete">
-                      <i class="fa-regular fa-trash-can text-danger"></i>
-                      <small>منذ 1 ساعة</small>
-                    </div>
-                    <div>
-                      <p class="text-black-50 text-end">
-                        تم إرسال رسالتك للأدارة بنجاح
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            class="card-container text-decoration-none col-7 mb-3 justify-content-center"
-          >
-            <div class="card p-2">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <div class="delete">
-                      <i class="fa-regular fa-trash-can text-danger"></i>
-                      <small>منذ 1 ساعة</small>
-                    </div>
-                    <div>
-                      <p class="text-black-50 text-end">اشعار من الأدارة</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
         </div>
+        <!-- End Heading -->
+        <!-- Start Body -->
+        <div class="questions-body">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+              <div class="question-tap col-9">
+                <div
+                  class="question d-flex justify-content-between align-items-center flex-row-reverse"
+                >
+                  <p class="title fw-bold">
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                    توليد هذا النص من مولد النص العربى ؟؟
+                  </p>
+                  <i class="fa-regular fa-circle-up question-icon"></i>
+                </div>
+                <p class="pra question-pra">
+                  .هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                  توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا
+                  النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                  التى يولدها التطبيق هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                  المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                  أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                  زيادة عدد الحروف التى يولدها التطبيق. هذا النص هو مثال لنص
+                  يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                  النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Body -->
       </div>
     </div>
-    <!-- End Alert -->
+    <!-- End Questions -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">

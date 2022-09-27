@@ -58,7 +58,7 @@
             class="navbar-nav d-flex justify-content-center align-items-center text-center flex-lg-row-reverse col-lg-8 col-12"
           >
             <li class="nav-item">
-              <a class="nav-link active" href="#">الرئيسية</a>
+              <a class="nav-link active" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">عن الاستبيان</a>
@@ -82,14 +82,104 @@
           <a href="pages/login.html" class="btn login" onclick="this.blur();" type="button" value="">
             تسجيل الدخول
           </a>
-            <button
-              class="btn add-survey survey-btn-index"
-              onclick="this.blur();"
-              type="button"
-              value=""
-            >
+            <!-- Start Open Survey Overlay -->
+            <button class="btn add-survey survey-btn-index" type="button" value="">
               إضافة طلب استبيان
             </button>
+            <div class="popup-overlay" style="display: none"></div>
+            <div class="container-survey" style="display: none">
+              <div class="container col-6 pb-5">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="heading-survey mt-5 mb-4">
+                    <h1>إضافة استبيان جديد</h1>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div class="col-md-8 d-flex justify-content-end text-end">
+                          <div class="card-body">
+                            <h2 class="h2">أضف استبيان</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div class="col-md-8 d-flex justify-content-end text-end">
+                          <div class="card-body">
+                            <h2 class="h2">أضف استبيان خارجي</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div class="col-md-8 d-flex justify-content-end text-end">
+                          <div class="card-body">
+                            <h2 class="h2">أضف خدمات بحثية</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Open Survey Overlay -->
           </form>
         </div>
       </div>
@@ -283,8 +373,9 @@
                       <p class="pra-body">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
                         إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
                       </p>
-                      <form
+                      <a
                         class="d-flex justify-content-lg-end justify-content-md-end justify-content-center mt-5 mb-5"
+                        href="pages/add-services-research.html"
                       >
                         <button
                           class="btn col-6 p-lg-3 surveys-btn"
@@ -294,7 +385,7 @@
                         >
                           ارسال طلب استبيان خارجي
                         </button>
-                      </form>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -574,18 +665,16 @@
     </div>
     <!-- End Body -->
     <!-- Start Button -->
-    <form
+    <div
       class="d-flex justify-content-center justify-content-center mt-5 mb-5"
     >
-      <button
+      <a
         class="btn col-lg-2 col-4 p-lg-3 mb-5 surveys-btn"
-        onclick="this.blur();"
-        type="button"
-        value=""
+        href="articles.html"
       >
         كل المقالات
-      </button>
-    </form>
+      </a>
+    </div>
     <!-- End Button -->
     </div>
     <!-- End Articles -->
@@ -672,18 +761,16 @@
         </div>
       <!-- End Body -->
       <!-- Start Button -->
-      <form
+      <div
         class="d-flex justify-content-center justify-content-center mt-5 mb-5"
       >
-        <button
+        <a
           class="btn col-lg-2 col-4 p-lg-3 mb-5 surveys-btn"
-          onclick="this.blur();"
-          type="button"
-          value=""
+          href="pages/question.html"
         >
           كل الأسئلة الشائعة
-        </button>
-      </form>
+        </a>
+      </div>
       <!-- End Button -->
     </div>
     <!-- End Questions -->
