@@ -186,7 +186,8 @@ body {
   border-radius: 45px;
 }
 .how-icon {
-  font-size: 70px;
+  height: 150px;
+  width: 150px;
   color: #74eed4;
   background-color: #fff;
   padding: 30px;
@@ -202,7 +203,7 @@ body {
   display: flex;
   right: 50%;
   height: 0;
-  top: 21%;
+  top: 22%;
   align-items: center;
   text-align: center;
   justify-content: center;
