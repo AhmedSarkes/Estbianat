@@ -145,7 +145,8 @@ body {
   text-align: end;
   margin-top: 0;
 }
-.surveys-btn {
+.surveys-btn,
+.surveys-btn:focus {
   background-color: var(--btn-color);
   color: #fff;
   padding: 15px;
