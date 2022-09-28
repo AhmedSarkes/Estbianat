@@ -242,4 +242,30 @@ $(() => {
   });
   // End Close Send Order Popup Overlay
   // End Send Order
+  // Start Open Popup Survey
+  $(".send-contact-ms-btn").on("click", () => {
+    $(".popup-overlay").css({
+      display: "block",
+    });
+    $(".container-survey").css({
+      display: "block",
+    });
+  });
+  // End Open Popup Survey
+  // Start Close Popup Survey
+  $(".popup-overlay").on("click", (event) => {
+    if (event.target.class !== $(".container-survey")) {
+      $(".popup-overlay").css({
+        display: "none",
+      });
+      $(".container-survey").css({
+        display: "none",
+      });
+    } else {
+      $(".popup-overlay").css({
+        display: "block",
+      });
+    }
+  });
+  // End Close Popup Survey
 });

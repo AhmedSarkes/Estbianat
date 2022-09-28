@@ -472,7 +472,9 @@ body {
 .login-form .container > .row,
 .register-form .container > .row,
 .conditions .container > .row,
-.research-form .container > .row {
+.research-form .container > .row,
+.contact-us .container > .row,
+.send-code .container > .row {
   direction: rtl;
   border: 1px solid #eee;
   border-radius: 30px;
@@ -884,6 +886,12 @@ option {
   translate: -50% -50%;
   background-color: #fff;
   border-radius: 45px;
+}
+.contact-us .heading {
+  font-size: 26px;
+}
+.send-code .heading {
+  font-size: 20px;
 }
 /* Start Media Query */
 @media (max-width: 1400px) {
