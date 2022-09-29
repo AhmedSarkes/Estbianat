@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>استبياناتي</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="nav-contact">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <p class="text-center col-lg-10 col-md-10 col-sm-12 mt-2">
+            astbyan@gmail.com / 96601555977744 - 96601555977744
+          </p>
+          <form class="col-lg-2 col-md-2 col-sm-12 text-center">
+            <button
+              class="btn lang-btn mt-1 mb-2"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
+              <i class="fa-solid fa-globe"></i><span> English</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container flex-row-reverse col-12">
+        <a href="../index.html"
+          ><img class="logo" src="../images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse w-100" id="main">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center text-center flex-lg-row-reverse col-lg-8 col-12"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عن الاستبيان</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> استبيانات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">أسئلة متكررة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المقالات</a>
+            </li>
+          </ul>
+          <form
+            class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
+          >
+            <a class="alert" href="alert.html"
+              ><i class="fa-regular fa-bell"></i>
+              <span class="alert-circle"></span>
+            </a>
+            <div class="dropdown">
+              <button
+                class="btn profile d-flex justify-content-center align-items-center text-center"
+                onclick="this.blur();"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-angle-up"></i>
+                الملف الشخصي
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >الملف الشخصي</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="survey.html"
+                    >استبياناتي</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >الفواتير</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >المحفظة</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >الشكاوي والمقترحات</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >الشروط والأحكام</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >عن المنصة</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
+                    href="#"
+                    >تسجيل خروج</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <button
+            class="btn add-survey survey-btn-index"
+            type="button"
+            value=""
+            >
+            إضافة طلب استبيان
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Start Open Survey Overlay -->
+    <div class="popup-overlay" style="display: none"></div>
+    <div class="container-survey" style="display: none">
+      <div class="container col-6 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="heading-survey mt-5 mb-4">
+            <h1>إضافة استبيان جديد</h1>
+            <p class="text-black-50">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+            </p>
+          </div>
+          <a
+            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+            href="add-survey.html"
+          >
+            <div class="card p-3">
+              <div
+                class="row g-0 d-flex justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="col-md-8 d-flex justify-content-end text-end"
+                >
+                  <div class="card-body">
+                    <h2 class="h2">أضف استبيان</h2>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="../images/01.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+            href="add-survey.html"
+          >
+            <div class="card p-3">
+              <div
+                class="row g-0 d-flex justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="col-md-8 d-flex justify-content-end text-end"
+                >
+                  <div class="card-body">
+                    <h2 class="h2">أضف استبيان خارجي</h2>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="../images/01.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+            href="add-survey.html"
+          >
+            <div class="card p-3">
+              <div
+                class="row g-0 d-flex justify-content-center align-items-center text-center"
+              >
+                <div
+                  class="col-md-8 d-flex justify-content-end text-end"
+                >
+                  <div class="card-body">
+                    <h2 class="h2">أضف خدمات بحثية</h2>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="../images/01.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Open Survey Overlay -->
+    <!-- End Navbar -->
+    <!-- Start Survey -->
+    <div class="survey">
+      <div class="container col-10 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="survey-container-heading mt-5">
+            <h1 class="heading mb-4">استبياناتي</h1>
+            <p class="pra text-black-50">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى
+            </p>
+          </div>
+          <div
+            class="survey-container-btn mb-3 col-10 d-flex justify-content-center align-items-center flex-row-reverse"
+          >
+            <button
+              class="survey-btn active-current col-3 p-3 m-4"
+              onclick="this.blur();"
+            >
+              الأستبيانات الجارية
+            </button>
+            <button class="survey-btn col-3 p-3 m-4" onclick="this.blur();">
+              الأستبيانات المنتهية
+            </button>
+          </div>
+          <div class="survey-container-body col-8">
+            <div
+              class="card-container text-decoration-none mb-3 justify-content-center"
+              href="#"
+            >
+              <div class="card p-2">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="col-10 d-flex justify-content-end text-end">
+                    <div class="card-body">
+                      <small class="text-black-50">منذ 1 ساعة</small>
+                      <div>
+                        <div class="text-black-50 text-end">
+                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
+                          <hr />
+                          <div
+                            class="footer-card d-flex justify-content-between align-items-center"
+                          >
+                            <span>
+                              تاريخ الإنتهاء:
+                              <span class="text-black">15-5-2022</span>
+                            </span>
+                            <span>
+                              عدد الاسئلة: <span class="text-black">22</span>
+                            </span>
+                            <span>
+                              عدد النقاط المكتسبة
+                              <span class="text-black">15</span>
+                            </span>
+                            <a
+                              class="more-survey text-decoration-none"
+                              href="satisfaction-statement.html"
+                            >
+                              <span>عرض المزيد</span>
+                              <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <img
+                      src="../images/01.jpg"
+                      class="img-fluid rounded-start"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-container text-decoration-none mb-3 justify-content-center"
+              href="#"
+            >
+              <div class="card p-2">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="col-10 d-flex justify-content-end text-end">
+                    <div class="card-body">
+                      <small class="text-black-50">منذ 1 ساعة</small>
+                      <div>
+                        <div class="text-black-50 text-end">
+                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
+                          <hr />
+                          <div
+                            class="footer-card d-flex justify-content-between align-items-center"
+                          >
+                            <span>
+                              تاريخ الإنتهاء:
+                              <span class="text-black">15-5-2022</span>
+                            </span>
+                            <span>
+                              عدد الاسئلة: <span class="text-black">22</span>
+                            </span>
+                            <span>
+                              عدد النقاط المكتسبة
+                              <span class="text-black">15</span>
+                            </span>
+                            <a
+                              class="more-survey text-decoration-none"
+                              href="satisfaction-statement.html"
+                            >
+                              <span>عرض المزيد</span>
+                              <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <img
+                      src="../images/01.jpg"
+                      class="img-fluid rounded-start"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-container text-decoration-none mb-3 justify-content-center"
+              href="#"
+            >
+              <div class="card p-2">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="col-10 d-flex justify-content-end text-end">
+                    <div class="card-body">
+                      <small class="text-black-50">منذ 1 ساعة</small>
+                      <div>
+                        <div class="text-black-50 text-end">
+                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
+                          <hr />
+                          <div
+                            class="footer-card d-flex justify-content-between align-items-center"
+                          >
+                            <span>
+                              تاريخ الإنتهاء:
+                              <span class="text-black">15-5-2022</span>
+                            </span>
+                            <span>
+                              عدد الاسئلة: <span class="text-black">22</span>
+                            </span>
+                            <span>
+                              عدد النقاط المكتسبة
+                              <span class="text-black">15</span>
+                            </span>
+                            <a
+                              class="more-survey text-decoration-none"
+                              href="satisfaction-statement.html"
+                            >
+                              <span>عرض المزيد</span>
+                              <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <img
+                      src="../images/01.jpg"
+                      class="img-fluid rounded-start"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-container text-decoration-none mb-3 justify-content-center"
+              href="#"
+            >
+              <div class="card p-2">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="col-10 d-flex justify-content-end text-end">
+                    <div class="card-body">
+                      <small class="text-black-50">منذ 1 ساعة</small>
+                      <div>
+                        <div class="text-black-50 text-end">
+                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
+                          <hr />
+                          <div
+                            class="footer-card d-flex justify-content-between align-items-center"
+                          >
+                            <span>
+                              تاريخ الإنتهاء:
+                              <span class="text-black">15-5-2022</span>
+                            </span>
+                            <span>
+                              عدد الاسئلة: <span class="text-black">22</span>
+                            </span>
+                            <span>
+                              عدد النقاط المكتسبة
+                              <span class="text-black">15</span>
+                            </span>
+                            <a
+                              class="more-survey text-decoration-none"
+                              href="satisfaction-statement.html"
+                            >
+                              <span>عرض المزيد</span>
+                              <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <img
+                      src="../images/01.jpg"
+                      class="img-fluid rounded-start"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-container text-decoration-none mb-3 justify-content-center"
+              href="#"
+            >
+              <div class="card p-2">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="col-10 d-flex justify-content-end text-end">
+                    <div class="card-body">
+                      <small class="text-black-50">منذ 1 ساعة</small>
+                      <div>
+                        <div class="text-black-50 text-end">
+                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
+                          <hr />
+                          <div
+                            class="footer-card d-flex justify-content-between align-items-center"
+                          >
+                            <span>
+                              تاريخ الإنتهاء:
+                              <span class="text-black">15-5-2022</span>
+                            </span>
+                            <span>
+                              عدد الاسئلة: <span class="text-black">22</span>
+                            </span>
+                            <span>
+                              عدد النقاط المكتسبة
+                              <span class="text-black">15</span>
+                            </span>
+                            <a
+                              class="more-survey text-decoration-none"
+                              href="satisfaction-statement.html"
+                            >
+                              <span>عرض المزيد</span>
+                              <i class="fa-solid fa-angle-left"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <img
+                      src="../images/01.jpg"
+                      class="img-fluid rounded-start"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Survey -->
+    <!-- Start Footer -->
+    <div class="footer text-center">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center text-center flex-row-reverse pt-lg-5 pt-5"
+        >
+          <div class="col-12 col-lg-4 mb-3 text-center text-lg-end mt-0">
+            <a href="../index.html"
+              ><img class="logo mb-3" src="../images/logo.png" alt=""
+            /></a>
+            <p class="mb-5 text-black-50 lh-base">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+            <form
+              class="d-flex input-group mb-5 justify-content-end"
+              role="search"
+            >
+              <button
+                class="btn surveys-btn d-flex align-items-center text-center justify-content-center"
+                onclick="this.blur();"
+                type="button"
+                value=""
+                style="border-radius: 10px"
+              >
+                اشترك الأن
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Estbyan@Gmail.com"
+                value=""
+                aria-label="Search"
+                style="border-radius: 10px"
+              />
+            </form>
+          </div>
+          <div class="col-8 col-sm-6 col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="heading mb-4">استبيان</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a class="mb-3" href="#">عن الاستبيان</a></li>
+                <li><a class="mb-3" href="#">الاسبيانات</a></li>
+                <li>
+                  <a class="mb-3" href="pages/question.html">اسئلة متكررة</a>
+                </li>
+                <li><a class="mb-3" href="#">تواصل معنا</a></li>
+                <li><a class="mb-3" href="pages/articles.html">المقالات</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-8 col-sm-6 col-md-6 col-lg-2 mt-lg-5 mt-md-5 mt-sm-5 mt-2"
+          >
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li><a class="mb-3 mt-5" href="#">أضف استبيان جديد</a></li>
+                <li><a class="mb-3" href="#">أضف استبيان خارجي</a></li>
+                <li><a class="mb-3" href="#">أضف استبيان بحثي</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mt-4 mt-lg-0">
+            <h5 class="heading mb-4">تواصل معنا</h5>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <a
+                class="text-decoration-none text-dark mt-0 mb-0 m-2"
+                href="mailto:ErtKazArt@gmail.com"
+                >ErtKazArt@gmail.com</a
+              >
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <a
+                class="text-decoration-none text-dark mt-0 mb-0 m-2"
+                href="tel:+96605124123"
+                >+96605124123</a
+              >
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-phone-flip"></i>
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <p class="mt-0 mb-0 m-2">Street, Ali, Al Eyad</p>
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+            <div
+              class="social-media d-flex justify-content-center align-items-center text-center"
+            >
+              <a
+                class="m-2 facebook d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/facebook.png" alt="facebook" />
+              </a>
+              <a
+                class="m-2 twitter d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/twitter.png" alt="twitter" />
+              </a>
+              <a
+                class="m-2 instagram d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/instagram.png" alt="instagram" />
+              </a>
+              <a
+                class="m-2 snapchat d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/snapchat.png" alt="snapchat" />
+              </a>
+              <a
+                class="m-2 whatsapp d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <!-- Copyright -->
+      <div class="copyright mt-4">
+        <p>Copyright &copy; 2022 Estbianat</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -268,4 +268,13 @@ $(() => {
     }
   });
   // End Close Popup Survey
+  // Start BTN Survey
+  $(".survey-container-btn .survey-btn").on("click", function () {
+    $(this).addClass("active-current").siblings().removeClass("active-current");
+    $(".survey-container-body")
+      .css({ display: "block" })
+      .siblings(".survey-container-body")
+      .css({ display: "none" });
+  });
+  // End BTN Survey
 });
