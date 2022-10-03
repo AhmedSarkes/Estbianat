@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../build/css/intlTelInput.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="nav-contact">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <p class="text-center col-lg-10 col-md-10 col-sm-12 mt-2">
+            astbyan@gmail.com / 96601555977744 - 96601555977744
+          </p>
+          <form class="col-lg-2 col-md-2 col-sm-12 text-center">
+            <button
+              class="btn lang-btn mt-1 mb-2"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
+              <i class="fa-solid fa-globe"></i><span> English</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container flex-row-reverse col-12">
+        <a href="../index.html"
+          ><img class="logo" src="../images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse w-100" id="main">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center text-center flex-lg-row-reverse col-lg-8 col-12"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عن الاستبيان</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> استبيانات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">أسئلة متكررة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المقالات</a>
+            </li>
+          </ul>
+          <form
+            class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
+          >
+            <a
+              href="pages/home.html"
+              class="btn login"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
+              تسجيل الدخول
+            </a>
+            <button
+              class="btn add-survey survey-btn-index"
+              type="button"
+              value=""
+            >
+              إضافة طلب استبيان
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Start Open Survey Overlay -->
+    <div class="popup-overlay" style="display: none"></div>
+    <div class="container-survey" style="display: none">
+      <div class="container col-6 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="heading-survey mt-5 mb-4">
+            <h1>إضافة استبيان جديد</h1>
+            <p class="text-black-50">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+            </p>
+          </div>
+          <a
+            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+            href="add-survey.html"
+          >
+            <div class="card p-3">
+              <div
+                class="row g-0 d-flex justify-content-center align-items-center text-center"
+              >
+                <div class="col-md-8 d-flex justify-content-end text-end">
+                  <div class="card-body">
+                    <h2 class="h2">أضف استبيان</h2>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="../images/01.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+            href="add-survey.html"
+          >
+            <div class="card p-3">
+              <div
+                class="row g-0 d-flex justify-content-center align-items-center text-center"
+              >
+                <div class="col-md-8 d-flex justify-content-end text-end">
+                  <div class="card-body">
+                    <h2 class="h2">أضف استبيان خارجي</h2>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="../images/01.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+            href="add-survey.html"
+          >
+            <div class="card p-3">
+              <div
+                class="row g-0 d-flex justify-content-center align-items-center text-center"
+              >
+                <div class="col-md-8 d-flex justify-content-end text-end">
+                  <div class="card-body">
+                    <h2 class="h2">أضف خدمات بحثية</h2>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="../images/01.jpg"
+                    class="img-fluid rounded-start"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Open Survey Overlay -->
+    <!-- End Navbar -->
+    <div class="register-form">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div
+          class="row col-10 d-flex justify-content-center align-items-center"
+        >
+          <div class="col-8 d-flex justify-content-center mb-3">
+            <img class="logo" src="../images/logo.png" alt="" />
+          </div>
+          <div class="heading-form text-center mb-5">
+            <h1 class="login-heading-welcome heading">الملف الشخصي</h1>
+          </div>
+          <form class="form-phone col-10" action="register-2.html">
+            <div class="container-user">
+              <label for="user" class="form-label">اسم المستخدم</label>
+              <input
+                type="text"
+                class="form-control user"
+                value=""
+                id="user"
+                required
+                placeholder="برجاء أدخل اسم المستخدم"
+              />
+            </div>
+            <div class="container-phone">
+              <label for="phone" class="form-label" required>رقم الجوال</label>
+              <div class="input-group mb-3">
+                <input
+                  type="tel"
+                  class="form-control phone-number"
+                  value=""
+                  id="phone"
+                  required
+                  placeholder="برجاء أدخل رقم الجوال"
+                />
+              </div>
+            </div>
+            <div class="container-ps mt-3">
+              <label for="password" class="form-label">كلمة المرور</label>
+              <input
+                type="password"
+                name=""
+                value=""
+                class="form-control password"
+                id="password"
+                placeholder="برجاء ادخل كلمة المرور الجديدة"
+                required
+              />
+              <span class="show-pw text-black-50">
+                <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+            </div>
+            <div class="container-ps mt-3">
+              <label for="confirm-password" class="form-label"
+                >تأكيد كلمة المرور</label
+              >
+              <input
+                type="password"
+                name=""
+                value=""
+                class="form-control confirm-password"
+                id="confirm-password"
+                placeholder="برجاء ادخل تأكيد كلمة المرور الجديدة"
+                required
+              />
+              <span class="show-pw text-black-50">
+                <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye"></i>
+              </span>
+            </div>
+            <div class="container-email mt-3">
+              <label for="email" class="form-label">البريد الالكتروني</label>
+              <input
+                type="email"
+                class="form-control email"
+                value=""
+                id="email"
+                required
+                placeholder="برجاء أدخل البريد الالكتروني"
+              />
+            </div>
+            <div class="select country mt-3">
+              <label class="form-label">الدولة</label>
+              <select class="form-select" required>
+                <option value="" class="text-black-50" disabled selected hidden>
+                  برجاء اختيار الدولة
+                </option>
+                <option value=""></option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="select city mt-3">
+              <label class="form-label">المدينة</label>
+              <select class="form-select" required>
+                <option value="" disabled selected hidden>
+                  برجاء اختيار المدينة
+                </option>
+                <option value=""></option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="select area mt-3">
+              <label class="form-label">المنطقة</label>
+              <select class="form-select" required>
+                <option value="" disabled selected hidden>
+                  برجاء اختيار المنطقة
+                </option>
+                <option value=""></option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="container-date mt-3">
+              <label class="label-cotrol" for="date">العمر</label>
+              <div class="date-local position-relative mt-2">
+                <input
+                  name=""
+                  value=""
+                  id="date"
+                  type="datetime-local"
+                  class="form-control date"
+                  placeholder="مثال 16/5/2022"
+                />
+                <i class="fa-regular fa-calendar date-icon"></i>
+              </div>
+            </div>
+            <div class="container-average mt-3">
+              <label for="average" class="form-label">متوسط الدخل</label>
+              <input
+                type="number"
+                class="form-control average"
+                value=""
+                id="average"
+                required
+                placeholder="برجاء أدخل متوسط الدخل"
+              />
+            </div>
+            <div class="conatiner-class mt-3">
+              <label for="class" class="form-label col-12">الفئة</label>
+              <div
+                class="row d-flex justify-content-around col-12 mt-3 me-0 ms-0"
+              >
+                <div
+                  class="student col-4 d-flex justify-content-lg-center justify-content-end align-items-center"
+                >
+                  <input
+                    type="radio"
+                    name="class"
+                    class="form-control"
+                    id="student"
+                    checked
+                  />
+                  <label for="student" class="form-label">طالب</label>
+                </div>
+                <div
+                  class="employer col-4 d-flex justify-content-lg-center justify-content-end align-items-center"
+                >
+                  <input
+                    type="radio"
+                    name="class"
+                    class="form-control"
+                    id="employer"
+                  />
+                  <label for="employer" class="form-label">موظف</label>
+                </div>
+                <div
+                  class="graduate col-4 d-flex justify-content-lg-center justify-content-end align-items-center"
+                >
+                  <input
+                    type="radio"
+                    name="class"
+                    class="form-control"
+                    id="graduate"
+                  />
+                  <label for="graduate" class="form-label">خريج</label>
+                </div>
+              </div>
+              <div
+                class="container-student"
+                id="student"
+                style="display: block"
+              >
+                <div class="select student-inp mt-3">
+                  <label class="form-label">المرحلة الدراسية</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>
+                      برجاء اختيار المرحلة الدراسية
+                    </option>
+                    <option value="primary">ابتدائي</option>
+                    <option value="middle">متوسط</option>
+                    <option value="high">ثانوي</option>
+                    <option value="university">جامعي</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div
+                class="container-employer"
+                id="employer"
+                style="display: none"
+              >
+                <div class="select employer-inp mt-3">
+                  <label class="form-label">الوظيفة</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>
+                      برجاء اختيار الوظيفة
+                    </option>
+                    <option value="teacher">معلم</option>
+                    <option value="doctor">طبيب</option>
+                    <option value="lower">محامي</option>
+                    <option value="other">اخرى</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="container-other mt-3">
+                  <label for="other" class="form-label">اخرى</label>
+                  <input
+                    type="text"
+                    class="form-control other"
+                    id="other"
+                    value=""
+                    required
+                    placeholder="برجاء أدخل الوظيفة"
+                  />
+                </div>
+                <div class="select lang-inp mt-3">
+                  <label class="form-label">الوظيفة</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>
+                      برجاء اختيار الوظيفة
+                    </option>
+                    <option value="arabic">اللغة العربية</option>
+                    <option value="english">اللغة الإنجليزية</option>
+                    <option value="french">اللغة الفرنسية</option>
+                    <option value="other">اخرى</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="container-other mt-3">
+                  <label for="other" class="form-label">اللغات الاخرى</label>
+                  <input
+                    type="text"
+                    class="form-control other"
+                    value=""
+                    id="other"
+                    required
+                    placeholder="برجاء أدخل اللغات الاخرى"
+                  />
+                </div>
+              </div>
+              <div
+                class="container-graduate"
+                id="graduate"
+                style="display: none"
+              >
+                <div class="select graduate-inp mt-3">
+                  <label class="form-label">الجامعة</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected hidden>
+                      برجاء اختيار الجامعة
+                    </option>
+                    <option value="qassim">القصيم</option>
+                    <option value="saud">سعود</option>
+                    <option value="noura">نورة</option>
+                    <option value="albaha">الباحة</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="container-guardian d-flex align-items-center col-lg-6 col-md-9 col-12 mt-4"
+            >
+              <label for="guardian" class="form-label col-lg-6 col-4"
+                >هل أنت ولي أمر؟</label
+              >
+              <input
+                type="radio"
+                name="guardian"
+                class="form-control"
+                id="yes_1"
+              />
+              <label for="yes_1" class="form-label">نعم</label>
+              <input
+                type="radio"
+                name="guardian"
+                class="form-control"
+                id="no_1"
+              />
+              <label for="no_1" class="form-label">لا</label>
+            </div>
+            <div class="container-children mt-3">
+              <label for="children" class="form-label">عدد الأولاد</label>
+              <input
+                type="number"
+                class="form-control children"
+                value=""
+                id="children"
+                required
+                placeholder="الرجاء أدخل عدد الأولاد"
+              />
+            </div>
+            <div
+              class="container-disease d-flex align-items-center col-lg-6 col-md-9 col-12 mt-4"
+            >
+              <label for="disease" class="form-label col-lg-6 col-4"
+                >هل أنت مريض؟</label
+              >
+              <input
+                type="radio"
+                name="disease"
+                class="form-control"
+                id="yes_2"
+              />
+              <label for="yes_2" class="form-label">نعم</label>
+              <input
+                type="radio"
+                name="disease"
+                class="form-control"
+                id="no_2"
+              />
+              <label for="no_2" class="form-label">لا</label>
+            </div>
+            <div class="select container-disease-name mt-3">
+              <label for="diseaseName" class="form-label">نوع المرض</label>
+              <select class="form-select" id="diseaseName" required>
+                <option value="" disabled selected hidden>
+                  برجاء اختيار الجامعة
+                </option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div
+              class="container-knowledge d-flex align-items-center col-lg-8 col-md-9 col-12 mt-4"
+            >
+              <label for="knowledge" class="form-label col-11"
+                >هل لديك معرفة بأحد من ذوي الاحتياجات الخاصة؟</label
+              >
+              <input
+                type="radio"
+                name="knowledge"
+                class="form-control"
+                id="yes_3"
+              />
+              <label for="yes_3" class="form-label">نعم</label>
+              <input
+                type="radio"
+                name="knowledge"
+                class="form-control"
+                id="no_3"
+              />
+              <label for="no_3" class="form-label">لا</label>
+            </div>
+            <div class="container-name-acc mt-3">
+              <label for="nameAcc" class="form-label">اسم صاحب الحساب</label>
+              <input
+                type="text"
+                class="form-control name_acc"
+                value=""
+                id="nameAcc"
+                required
+                placeholder="برجاء أدخل اسم صاحب الحساب"
+              />
+            </div>
+            <div class="container-bank mt-3">
+              <label for="bank" class="form-label">اسم البنك</label>
+              <input
+                type="text"
+                class="form-control bank"
+                value=""
+                id="bank"
+                required
+                placeholder="برجاء أدخل اسم البنك"
+              />
+            </div>
+            <div class="container-acc-number mt-3">
+              <label for="accNumber" class="form-label">رقم الحساب</label>
+              <input
+                type="number"
+                class="form-control acc-number"
+                value=""
+                id="accNumber"
+                required
+                placeholder="برجاء أدخل رقم الحساب"
+              />
+            </div>
+            <div
+              class="change-ps-container d-flex justify-content-center align-items-center mt-5 mb-4"
+            >
+              <a class="btn change-ps p-3 col-6" href="change-pw.html"
+                >تغيير كلمة المرور</a
+              >
+            </div>
+            <div
+              class="login-container-btn col-12 d-flex justify-content-center align-items-center mb-5"
+            >
+              <button class="btn login save send-order-btn p-3 col-6">
+                حفظ
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Confirm Code -->
+    <div class="send-code confirm-phone-number" style="display: none">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center m-5">
+            <img class="logo" src="../images/logo.png" alt="" />
+          </div>
+          <div class="heading-form col-10 mb-5">
+            <h1 class="login-heading-welcome heading mb-3">تأكيد رقم الجوال</h1>
+            <p class="text-black-50 mb-1">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى
+            </p>
+            <p class="text-black-50 mb-1">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+            </p>
+          </div>
+          <form class="form-phone col-10" action="personal.html">
+            <div class="container-user mb-5">
+              <label for="user" class="form-label">كود التفعيل</label>
+              <input
+                type="text"
+                class="form-control user"
+                value=""
+                id="user"
+                required
+                placeholder="برجاء أدخل كود التفعيل"
+              />
+            </div>
+            <div
+              class="confirm-container-btn login-container-btn d-flex justify-content-around align-items-center mt-5 mb-5"
+            >
+              <button class="col-5 btn confirm">تأكيد</button>
+              <button class="col-5 btn back">رجوع</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Confirm Code -->
+
+    <!-- Start Success Feedback -->
+    <div class="container-success-send-order" style="display: none">
+      <div class="container col-xxl-4 col-xl-6 col-lg-8 col-md-10 col-11 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="heading-overlay mt-5">
+            <i class="fa-solid fa-circle-check"></i>
+            <p class="mt-4 fs-5">تم حفظ التغيرات بنجاح</p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center mt-5 mb-4"
+          >
+            <a class="btn success-send-order-btn col-6" href="home.html">
+              الرجوع للرئيسية
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Success Feedback -->
+    <!-- Start Form Register -->
+    <!-- End Form Register -->
+    <!-- Start Footer -->
+    <div class="footer text-center">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center text-center flex-row-reverse pt-lg-5 pt-5"
+        >
+          <div class="col-12 col-lg-4 mb-3 text-center text-lg-end mt-0">
+            <a href="../index.html"
+              ><img class="logo mb-3" src="../images/logo.png" alt=""
+            /></a>
+            <p class="mb-5 text-black-50 lh-base">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+            <form
+              class="d-flex input-group mb-5 justify-content-end"
+              role="search"
+            >
+              <button
+                class="btn surveys-btn d-flex align-items-center text-center justify-content-center"
+                onclick="this.blur();"
+                type="button"
+                value=""
+                style="border-radius: 10px"
+              >
+                اشترك الأن
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Estbyan@Gmail.com"
+                value=""
+                aria-label="Search"
+                style="border-radius: 10px"
+              />
+            </form>
+          </div>
+          <div class="col-8 col-sm-6 col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="heading mb-4">استبيان</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a class="mb-3" href="#">عن الاستبيان</a></li>
+                <li><a class="mb-3" href="#">الاسبيانات</a></li>
+                <li><a class="mb-3" href="#">اسئلة متكررة</a></li>
+                <li><a class="mb-3" href="#">تواصل معنا</a></li>
+                <li><a class="mb-3" href="#">المقالات</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-8 col-sm-6 col-md-6 col-lg-2 mt-lg-5 mt-md-5 mt-sm-5 mt-2"
+          >
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li><a class="mb-3 mt-5" href="#">أضف استبيان جديد</a></li>
+                <li><a class="mb-3" href="#">أضف استبيان خارجي</a></li>
+                <li><a class="mb-3" href="#">أضف استبيان بحثي</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mt-4 mt-lg-0">
+            <h5 class="heading mb-4">تواصل معنا</h5>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <a
+                class="text-decoration-none text-dark mt-0 mb-0 m-2"
+                href="mailto:ErtKazArt@gmail.com"
+                >ErtKazArt@gmail.com</a
+              >
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <a
+                class="text-decoration-none text-dark mt-0 mb-0 m-2"
+                href="tel:+96605124123"
+                >+96605124123</a
+              >
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-phone-flip"></i>
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <p class="mt-0 mb-0 m-2">Street, Ali, Al Eyad</p>
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+            <div
+              class="social-media d-flex justify-content-center align-items-center text-center"
+            >
+              <a
+                class="m-2 facebook d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/facebook.png" alt="facebook" />
+              </a>
+              <a
+                class="m-2 twitter d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/twitter.png" alt="twitter" />
+              </a>
+              <a
+                class="m-2 instagram d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/instagram.png" alt="instagram" />
+              </a>
+              <a
+                class="m-2 snapchat d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/snapchat.png" alt="snapchat" />
+              </a>
+              <a
+                class="m-2 whatsapp d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <!-- Copyright -->
+      <div class="copyright mt-4">
+        <p>Copyright &copy; 2022 Estbianat</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../build/js/intlTelInput.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Tel Number -->
+    <script>
+      var input = document.querySelector("#phone"),
+        errorMsg = document.querySelector("#error-msg"),
+        validMsg = document.querySelector("#valid-msg");
+
+      // here, the index maps to the error code returned from getValidationError - see readme
+      var errorMap = [
+        "Invalid number",
+        "Invalid country code",
+        "Too short",
+        "Too long",
+        "Invalid number",
+      ];
+
+      // initialise plugin
+      var iti = window.intlTelInput(input, {
+        utilsScript: "../build/js/utils.js?1638200991544",
+      });
+
+      var reset = function () {
+        input.classList.remove("error");
+        errorMsg.innerHTML = "";
+        errorMsg.classList.add("hide");
+        validMsg.classList.add("hide");
+      };
+
+      // on blur: validate
+      input.addEventListener("blur", function () {
+        reset();
+        if (input.value.trim()) {
+          if (iti.isValidNumber()) {
+            validMsg.classList.remove("hide");
+          } else {
+            input.classList.add("error");
+            var errorCode = iti.getValidationError();
+            errorMsg.innerHTML = errorMap[errorCode];
+            errorMsg.classList.remove("hide");
+          }
+        }
+      });
+
+      // on keyup / change flag: reset
+      input.addEventListener("change", reset);
+      input.addEventListener("keyup", reset);
+    </script>
+
+    <!-- Date -->
+    <script>
+      configDate = {
+        enableTime: false,
+        altInput: true,
+        altFormat: "F j, Y",
+      };
+      flatpickr(`.date`, configDate);
+    </script>
+  </body>
+</html>

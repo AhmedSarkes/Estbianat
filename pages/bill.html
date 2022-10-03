@@ -160,17 +160,17 @@
               </ul>
             </div>
             <button
-            class="btn add-survey survey-btn-index"
-            type="button"
-            value=""
+              class="btn add-survey survey-btn-index"
+              type="button"
+              value=""
             >
-            إضافة طلب استبيان
-          </button>
-        </form>
+              إضافة طلب استبيان
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Start Open Survey Overlay -->
+    </nav>
+    <!-- Start Open Survey Overlay -->
     <div class="popup-overlay" style="display: none"></div>
     <div class="container-survey" style="display: none">
       <div class="container col-6 pb-5">
@@ -191,9 +191,7 @@
               <div
                 class="row g-0 d-flex justify-content-center align-items-center text-center"
               >
-                <div
-                  class="col-md-8 d-flex justify-content-end text-end"
-                >
+                <div class="col-md-8 d-flex justify-content-end text-end">
                   <div class="card-body">
                     <h2 class="h2">أضف استبيان</h2>
                     <p class="text-black-50">
@@ -219,9 +217,7 @@
               <div
                 class="row g-0 d-flex justify-content-center align-items-center text-center"
               >
-                <div
-                  class="col-md-8 d-flex justify-content-end text-end"
-                >
+                <div class="col-md-8 d-flex justify-content-end text-end">
                   <div class="card-body">
                     <h2 class="h2">أضف استبيان خارجي</h2>
                     <p class="text-black-50">
@@ -247,9 +243,7 @@
               <div
                 class="row g-0 d-flex justify-content-center align-items-center text-center"
               >
-                <div
-                  class="col-md-8 d-flex justify-content-end text-end"
-                >
+                <div class="col-md-8 d-flex justify-content-end text-end">
                   <div class="card-body">
                     <h2 class="h2">أضف خدمات بحثية</h2>
                     <p class="text-black-50">
@@ -278,286 +272,268 @@
         <div
           class="row g-0 d-flex justify-content-center align-items-center text-center"
         >
-          <div class="survey-container-heading mt-5">
-            <h1 class="heading mb-4">استبياناتي</h1>
-            <p class="pra text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
-              هذا النص من مولد النص العربى
-            </p>
+          <div class="survey-container-heading mt-5 mb-3">
+            <h1 class="heading m-4">الفواتير</h1>
           </div>
           <div
-            class="survey-container-btn mb-3 col-10 d-flex justify-content-center align-items-center flex-row-reverse"
+            class="row d-flex justify-content-center align-content-center text-center"
           >
-            <button
-              class="survey-btn active-current col-3 p-3 m-4"
-              onclick="this.blur();"
+            <div class="col-10">
+              <div
+                class="container container-bill d-flex flex-row-reverse justify-content-start align-items-center text-end text-black fw-bold fs-5 pt-1 pb-1 p-3"
+              >
+                <i class="fa-solid fa-note-sticky mt-1"></i>
+                <p class="m-1">رقم الفاتورة</p>
+                <p class="mt-3">#1234567</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="text-end text-black fw-bold p-5 pt-0 pb-0">
+                استبيان اسم لمعرفة جودة منج مطروح بالسوق
+              </p>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تاريخ إضافى الاسبيان</p>
+                <p class="text-black fw-bold col-2">10/3/2022</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">عدد من قاموا بالأستبيان</p>
+                <p class="text-black fw-bold col-2">2155</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تكلفة الطلب</p>
+                <p
+                  class="cost-container d-flex flex-row-reverse fw-bold justify-content-center col-2"
+                >
+                  <span class="cost">1500.00</span><span>ر.س</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-10 mt-4 mb-4 d-flex justify-content-center align-items-center text-center"
             >
-              الأستبيانات الجارية
-            </button>
-            <button class="survey-btn col-3 p-3 m-4" onclick="this.blur();">
-              الأستبيانات المنتهية
-            </button>
+              <a
+                class="btn login show-bill col-12 d-flex justify-content-center align-items-center"
+                href="bill-details.html"
+              >
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+                عرض الفاتورة
+              </a>
+            </div>
           </div>
-          <div class="survey-container-body col-8">
-            <div
-              class="card-container text-decoration-none mb-3 justify-content-center"
-              href="#"
-            >
-              <div class="card p-2">
-                <div
-                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+          <div
+            class="row d-flex justify-content-center align-content-center text-center"
+          >
+            <div class="col-10">
+              <div
+                class="container container-bill d-flex flex-row-reverse justify-content-start align-items-center text-end text-black fw-bold fs-5 pt-1 pb-1 p-3"
+              >
+                <i class="fa-solid fa-note-sticky mt-1"></i>
+                <p class="m-1">رقم الفاتورة</p>
+                <p class="mt-3">#1234567</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="text-end text-black fw-bold p-5 pt-0 pb-0">
+                استبيان اسم لمعرفة جودة منج مطروح بالسوق
+              </p>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تاريخ إضافى الاسبيان</p>
+                <p class="text-black fw-bold col-2">10/3/2022</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">عدد من قاموا بالأستبيان</p>
+                <p class="text-black fw-bold col-2">2155</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تكلفة الطلب</p>
+                <p
+                  class="cost-container d-flex flex-row-reverse fw-bold justify-content-center col-2"
                 >
-                  <div class="col-10 d-flex justify-content-end text-end">
-                    <div class="card-body">
-                      <small class="text-black-50">منذ 1 ساعة</small>
-                      <div>
-                        <div class="text-black-50 text-end">
-                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
-                          <hr />
-                          <div
-                            class="footer-card d-flex justify-content-between align-items-center"
-                          >
-                            <span>
-                              تاريخ الإنتهاء:
-                              <span class="text-black">15-5-2022</span>
-                            </span>
-                            <span>
-                              عدد الاسئلة: <span class="text-black">22</span>
-                            </span>
-                            <span>
-                              عدد النقاط المكتسبة
-                              <span class="text-black">15</span>
-                            </span>
-                            <a
-                              class="more-survey text-decoration-none"
-                              href="satisfaction-statement.html"
-                            >
-                              <span>عرض المزيد</span>
-                              <i class="fa-solid fa-angle-left"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <img
-                      src="../images/01.jpg"
-                      class="img-fluid rounded-start"
-                      alt=""
-                    />
-                  </div>
-                </div>
+                  <span class="cost">1500.00</span><span>ر.س</span>
+                </p>
               </div>
             </div>
             <div
-              class="card-container text-decoration-none mb-3 justify-content-center"
-              href="#"
+              class="col-10 mt-4 mb-4 d-flex justify-content-center align-items-center text-center"
             >
-              <div class="card p-2">
-                <div
-                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+              <a
+                class="btn login show-bill col-12 d-flex justify-content-center align-items-center"
+                href="bill-details.html"
+              >
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+                عرض الفاتورة
+              </a>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-center align-content-center text-center"
+          >
+            <div class="col-10">
+              <div
+                class="container container-bill d-flex flex-row-reverse justify-content-start align-items-center text-end text-black fw-bold fs-5 pt-1 pb-1 p-3"
+              >
+                <i class="fa-solid fa-note-sticky mt-1"></i>
+                <p class="m-1">رقم الفاتورة</p>
+                <p class="mt-3">#1234567</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="text-end text-black fw-bold p-5 pt-0 pb-0">
+                استبيان اسم لمعرفة جودة منج مطروح بالسوق
+              </p>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تاريخ إضافى الاسبيان</p>
+                <p class="text-black fw-bold col-2">10/3/2022</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">عدد من قاموا بالأستبيان</p>
+                <p class="text-black fw-bold col-2">2155</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تكلفة الطلب</p>
+                <p
+                  class="cost-container d-flex flex-row-reverse fw-bold justify-content-center col-2"
                 >
-                  <div class="col-10 d-flex justify-content-end text-end">
-                    <div class="card-body">
-                      <small class="text-black-50">منذ 1 ساعة</small>
-                      <div>
-                        <div class="text-black-50 text-end">
-                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
-                          <hr />
-                          <div
-                            class="footer-card d-flex justify-content-between align-items-center"
-                          >
-                            <span>
-                              تاريخ الإنتهاء:
-                              <span class="text-black">15-5-2022</span>
-                            </span>
-                            <span>
-                              عدد الاسئلة: <span class="text-black">22</span>
-                            </span>
-                            <span>
-                              عدد النقاط المكتسبة
-                              <span class="text-black">15</span>
-                            </span>
-                            <a
-                              class="more-survey text-decoration-none"
-                              href="satisfaction-statement.html"
-                            >
-                              <span>عرض المزيد</span>
-                              <i class="fa-solid fa-angle-left"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <img
-                      src="../images/01.jpg"
-                      class="img-fluid rounded-start"
-                      alt=""
-                    />
-                  </div>
-                </div>
+                  <span class="cost">1500.00</span><span>ر.س</span>
+                </p>
               </div>
             </div>
             <div
-              class="card-container text-decoration-none mb-3 justify-content-center"
-              href="#"
+              class="col-10 mt-4 mb-4 d-flex justify-content-center align-items-center text-center"
             >
-              <div class="card p-2">
-                <div
-                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+              <a
+                class="btn login show-bill col-12 d-flex justify-content-center align-items-center"
+                href="bill-details.html"
+              >
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+                عرض الفاتورة
+              </a>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-center align-content-center text-center"
+          >
+            <div class="col-10">
+              <div
+                class="container container-bill d-flex flex-row-reverse justify-content-start align-items-center text-end text-black fw-bold fs-5 pt-1 pb-1 p-3"
+              >
+                <i class="fa-solid fa-note-sticky mt-1"></i>
+                <p class="m-1">رقم الفاتورة</p>
+                <p class="mt-3">#1234567</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="text-end text-black fw-bold p-5 pt-0 pb-0">
+                استبيان اسم لمعرفة جودة منج مطروح بالسوق
+              </p>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تاريخ إضافى الاسبيان</p>
+                <p class="text-black fw-bold col-2">10/3/2022</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">عدد من قاموا بالأستبيان</p>
+                <p class="text-black fw-bold col-2">2155</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تكلفة الطلب</p>
+                <p
+                  class="cost-container d-flex flex-row-reverse fw-bold justify-content-center col-2"
                 >
-                  <div class="col-10 d-flex justify-content-end text-end">
-                    <div class="card-body">
-                      <small class="text-black-50">منذ 1 ساعة</small>
-                      <div>
-                        <div class="text-black-50 text-end">
-                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
-                          <hr />
-                          <div
-                            class="footer-card d-flex justify-content-between align-items-center"
-                          >
-                            <span>
-                              تاريخ الإنتهاء:
-                              <span class="text-black">15-5-2022</span>
-                            </span>
-                            <span>
-                              عدد الاسئلة: <span class="text-black">22</span>
-                            </span>
-                            <span>
-                              عدد النقاط المكتسبة
-                              <span class="text-black">15</span>
-                            </span>
-                            <a
-                              class="more-survey text-decoration-none"
-                              href="satisfaction-statement.html"
-                            >
-                              <span>عرض المزيد</span>
-                              <i class="fa-solid fa-angle-left"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <img
-                      src="../images/01.jpg"
-                      class="img-fluid rounded-start"
-                      alt=""
-                    />
-                  </div>
-                </div>
+                  <span class="cost">1500.00</span><span>ر.س</span>
+                </p>
               </div>
             </div>
             <div
-              class="card-container text-decoration-none mb-3 justify-content-center"
-              href="#"
+              class="col-10 mt-4 mb-4 d-flex justify-content-center align-items-center text-center"
             >
-              <div class="card p-2">
-                <div
-                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+              <a
+                class="btn login show-bill col-12 d-flex justify-content-center align-items-center"
+                href="bill-details.html"
+              >
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+                عرض الفاتورة
+              </a>
+            </div>
+          </div>
+          <div
+            class="row d-flex justify-content-center align-content-center text-center"
+          >
+            <div class="col-10">
+              <div
+                class="container container-bill d-flex flex-row-reverse justify-content-start align-items-center text-end text-black fw-bold fs-5 pt-1 pb-1 p-3"
+              >
+                <i class="fa-solid fa-note-sticky mt-1"></i>
+                <p class="m-1">رقم الفاتورة</p>
+                <p class="mt-3">#1234567</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="text-end text-black fw-bold p-5 pt-0 pb-0">
+                استبيان اسم لمعرفة جودة منج مطروح بالسوق
+              </p>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تاريخ إضافى الاسبيان</p>
+                <p class="text-black fw-bold col-2">10/3/2022</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">عدد من قاموا بالأستبيان</p>
+                <p class="text-black fw-bold col-2">2155</p>
+              </div>
+              <div
+                class="d-flex justify-content-between text-center flex-row-reverse p-5 pt-0 pb-0"
+              >
+                <p class="text-black-50">تكلفة الطلب</p>
+                <p
+                  class="cost-container d-flex flex-row-reverse fw-bold justify-content-center col-2"
                 >
-                  <div class="col-10 d-flex justify-content-end text-end">
-                    <div class="card-body">
-                      <small class="text-black-50">منذ 1 ساعة</small>
-                      <div>
-                        <div class="text-black-50 text-end">
-                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
-                          <hr />
-                          <div
-                            class="footer-card d-flex justify-content-between align-items-center"
-                          >
-                            <span>
-                              تاريخ الإنتهاء:
-                              <span class="text-black">15-5-2022</span>
-                            </span>
-                            <span>
-                              عدد الاسئلة: <span class="text-black">22</span>
-                            </span>
-                            <span>
-                              عدد النقاط المكتسبة
-                              <span class="text-black">15</span>
-                            </span>
-                            <a
-                              class="more-survey text-decoration-none"
-                              href="satisfaction-statement.html"
-                            >
-                              <span>عرض المزيد</span>
-                              <i class="fa-solid fa-angle-left"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <img
-                      src="../images/01.jpg"
-                      class="img-fluid rounded-start"
-                      alt=""
-                    />
-                  </div>
-                </div>
+                  <span class="cost">1500.00</span><span>ر.س</span>
+                </p>
               </div>
             </div>
             <div
-              class="card-container text-decoration-none mb-3 justify-content-center"
-              href="#"
+              class="col-10 mt-4 mb-4 d-flex justify-content-center align-items-center text-center"
             >
-              <div class="card p-2">
-                <div
-                  class="row g-0 d-flex justify-content-center align-items-center text-center"
-                >
-                  <div class="col-10 d-flex justify-content-end text-end">
-                    <div class="card-body">
-                      <small class="text-black-50">منذ 1 ساعة</small>
-                      <div>
-                        <div class="text-black-50 text-end">
-                          <h5 class="text-black">نموذج استبيان رضاء العملاء</h5>
-                          <hr />
-                          <div
-                            class="footer-card d-flex justify-content-between align-items-center"
-                          >
-                            <span>
-                              تاريخ الإنتهاء:
-                              <span class="text-black">15-5-2022</span>
-                            </span>
-                            <span>
-                              عدد الاسئلة: <span class="text-black">22</span>
-                            </span>
-                            <span>
-                              عدد النقاط المكتسبة
-                              <span class="text-black">15</span>
-                            </span>
-                            <a
-                              class="more-survey text-decoration-none"
-                              href="satisfaction-statement.html"
-                            >
-                              <span>عرض المزيد</span>
-                              <i class="fa-solid fa-angle-left"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <img
-                      src="../images/01.jpg"
-                      class="img-fluid rounded-start"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
+              <a
+                class="btn login show-bill col-12 d-flex justify-content-center align-items-center"
+                href="bill-details.html"
+              >
+                <span><i class="fa-solid fa-chevron-left"></i></span>
+                عرض الفاتورة
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- End Survey -->
     <!-- Start Footer -->
     <div class="footer text-center">

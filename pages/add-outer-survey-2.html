@@ -206,94 +206,137 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Form Register -->
-    <div class="register-form">
+    <!-- Start Add New Survey -->
+    <div class="add-new-survey-form">
       <div class="container d-flex justify-content-center align-items-center">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-8 d-flex justify-content-center mb-5">
-            <img class="logo" src="../images/logo.png" alt="" />
+            <h1 class="heading">إضافة أستبيان خارجي</h1>
           </div>
           <div
-            class="container points col-6 d-flex justify-content-between align-items-center text-center mt-5 mb-5"
+            class="container outer-survey points col-9 d-flex justify-content-around align-items-center text-center mt-5 mb-5"
           >
             <div>
-              <h5 class="point point-1 active">البيانات الشخصية</h5>
+              <h5 class="point point-1 active">تفاصيل الأستبيان</h5>
             </div>
             <div>
-              <h5 class="point point-1 active">بيانات الحساب</h5>
+              <h5 class="point point-1 active">القبول والدفع</h5>
             </div>
           </div>
-          <div class="heading-form col-8">
-            <h1 class="login-heading-welcome">مرحبا بك!</h1>
-            <h2 class="login-heading-login">تسجيل دخول</h2>
-            <p class="text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+          <div
+            class="col-7 d-flex flex-column text-center justify-content-center align-items-center mt-5"
+          >
+            <img class="mb-5" src="../images/success.gif" alt="" />
+            <p class="fs-5 fw-bold mt-3">
+              تم قبول الأستبيان بنجاح قم بتسديد قيمة الأستبيان للبدأ
             </p>
           </div>
-          <form class="form-phone col-8" action="register-2.html">
-            <div class="container-name-acc">
-              <label for="nameAcc" class="form-label">اسم صاحب الحساب</label>
-              <input
-                type="text"
-                class="form-control name_acc"
-                value=""
-                id="nameAcc"
-                required
-                placeholder="برجاء أدخل اسم صاحب الحساب"
-              />
-            </div>
-            <div class="container-bank">
-              <label for="bank" class="form-label">اسم البنك</label>
-              <input
-                type="text"
-                class="form-control bank"
-                value=""
-                id="bank"
-                required
-                placeholder="برجاء أدخل اسم البنك"
-              />
-            </div>
-            <div class="container-acc-number">
-              <label for="accNumber" class="form-label">رقم الحساب</label>
-              <input
-                type="number"
-                class="form-control acc-number"
-                value=""
-                id="accNumber"
-                required
-                placeholder="برجاء أدخل رقم الحساب"
-              />
-            </div>
-            <div class="container-conditions mt-3"></div>
+          <div class="col-6 details-bill m-5 mb-3">
             <div
-              class="container-conditions d-flex align-items-center justify-content-center col-lg-8 col-md-9 col-12 mt-3"
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
             >
-              <input
-                type="checkbox"
-                class="conditions"
-                value=""
-                id="conditions"
-                required
-              />
-              <label for="conditions" class="form-label col-12"
-                >الموافقة على
-                <span
-                  ><a class="text-decoration-none" href="conditions.html"
-                    >الشروط والأحكام</a
-                  ></span
-                ></label
+              <p class="text-end text-black fw-bold">التفاصيل المالية :</p>
+            </div>
+            <div
+              class="d-flex justify-content-between text-center mt-2"
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-black-50">قيمة الاستبيان :</p>
+              <p class="text-black fw-bold col-2"><span>1500</span> ر.س</p>
+            </div>
+            <div
+              class="d-flex justify-content-between text-center mt-2"
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-black-50">القيمة المضافة :</p>
+              <p class="text-black fw-bold col-2"><span>1500</span> ر.س</p>
+            </div>
+            <div class="d-flex justify-content-between text-center mt-2">
+              <p class="text-black fw-bold">المجموع الكلي :</p>
+              <p class="color-1 fw-bold col-2"><span>1500</span> ر.س</p>
+            </div>
+          </div>
+          <div class="col-6 details-pay m-5 mt-2 mb-3">
+            <div
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-end text-black fw-bold">اختيار طريقة الدفع :</p>
+            </div>
+            <div class="credit col-12 mt-4 mb-3">
+              <div
+                class="credit-container col-12 d-flex justify-content-between align-items-center mt-8"
               >
+                <div>
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="d-block col-10">
+                  <p class="fw-bold mt-3 mb-2">بطاقة إئتمانية</p>
+                  <p>الدفع بابطاقة الإئتمانية</p>
+                </div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
             </div>
+            <div class="wallet col-12 mt-2 mb-3">
+              <div
+                class="wallet-container col-12 d-flex justify-content-between align-items-center"
+              >
+                <div>
+                  <i class="fa-solid fa-wallet"></i>
+                </div>
+                <div class="d-block col-10">
+                  <p class="fw-bold mt-3 mb-2">المحفظة</p>
+                  <p>يمكنك الدفع عن طريق المحفظة</p>
+                </div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="form-phone col-8">
             <div
-              class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
+              class="login-container-btn wait-accept col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
             >
-              <a class="btn add col-6" href="confirm-profile.html">تسجيل</a>
+              <button class="btn edit-survey send-order-btn col-6 p-3">
+                أدفع الآن
+              </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-    <!-- End Form Register -->
+    <!-- Start Success Feedback -->
+    <div class="container-success-send-order" style="display: none">
+      <div class="container col-lg-4 col-6 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="heading-overlay mt-5">
+            <i class="fa-solid fa-circle-check"></i>
+            <p class="mt-4">تم الدفع بنجاح وإضافى الأستبيان بنجاح</p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center mt-5 mb-4"
+          >
+            <a class="btn success-send-order-btn col-6" href="home.html">
+              الرجوع للرئيسية
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Success Feedback -->
+    <!-- End Add New Survey -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">

@@ -206,94 +206,60 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Form Register -->
-    <div class="register-form">
-      <div class="container d-flex justify-content-center align-items-center">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-8 d-flex justify-content-center mb-5">
-            <img class="logo" src="../images/logo.png" alt="" />
-          </div>
-          <div
-            class="container points col-6 d-flex justify-content-between align-items-center text-center mt-5 mb-5"
-          >
-            <div>
-              <h5 class="point point-1 active">البيانات الشخصية</h5>
-            </div>
-            <div>
-              <h5 class="point point-1 active">بيانات الحساب</h5>
-            </div>
-          </div>
-          <div class="heading-form col-8">
-            <h1 class="login-heading-welcome">مرحبا بك!</h1>
-            <h2 class="login-heading-login">تسجيل دخول</h2>
-            <p class="text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-            </p>
-          </div>
-          <form class="form-phone col-8" action="register-2.html">
-            <div class="container-name-acc">
-              <label for="nameAcc" class="form-label">اسم صاحب الحساب</label>
-              <input
-                type="text"
-                class="form-control name_acc"
-                value=""
-                id="nameAcc"
-                required
-                placeholder="برجاء أدخل اسم صاحب الحساب"
-              />
-            </div>
-            <div class="container-bank">
-              <label for="bank" class="form-label">اسم البنك</label>
-              <input
-                type="text"
-                class="form-control bank"
-                value=""
-                id="bank"
-                required
-                placeholder="برجاء أدخل اسم البنك"
-              />
-            </div>
-            <div class="container-acc-number">
-              <label for="accNumber" class="form-label">رقم الحساب</label>
-              <input
-                type="number"
-                class="form-control acc-number"
-                value=""
-                id="accNumber"
-                required
-                placeholder="برجاء أدخل رقم الحساب"
-              />
-            </div>
-            <div class="container-conditions mt-3"></div>
+    <!-- Start Add New Survey -->
+    <div class="add-new-survey-form-2 mt-5">
+      <div class="container">
+        <div class="row row-1">
+          <div class="container add-new-survey-form-head">
             <div
-              class="container-conditions d-flex align-items-center justify-content-center col-lg-8 col-md-9 col-12 mt-3"
+              class="row container-add-questions-row d-flex justify-content-center align-items-center p-5"
             >
-              <input
-                type="checkbox"
-                class="conditions"
-                value=""
-                id="conditions"
-                required
-              />
-              <label for="conditions" class="form-label col-12"
-                >الموافقة على
-                <span
-                  ><a class="text-decoration-none" href="conditions.html"
-                    >الشروط والأحكام</a
-                  ></span
-                ></label
+              <div class="col-8 d-flex justify-content-center mb-5">
+                <h1 class="heading">تعديل أستبيان</h1>
+              </div>
+              <div
+                class="container points col-8 d-flex justify-content-around align-items-center text-center mt-5"
               >
+                <div>
+                  <h5 class="point point-1 active">تفاصيل الأستبيان</h5>
+                </div>
+                <div>
+                  <h5 class="point point-1 active">إضافة الأسئلة</h5>
+                </div>
+                <div>
+                  <h5 class="point point-1 active">الفئة المستهدفة</h5>
+                </div>
+                <div>
+                  <h5 class="point">القبول والدفع</h5>
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex flex-column text-center justify-content-center align-items-center mt-5"
+              >
+                <img class="mb-5" src="../images/success.gif" alt="" />
+                <p class="fs-5 fw-bold mt-3">
+                  تم ارسال الأستبيان إلى إدارة التطبيق بنجاح بانتظار الموافقة
+                  وتحديد سعر الأستبيان
+                </p>
+              </div>
             </div>
-            <div
-              class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
-            >
-              <a class="btn add col-6" href="confirm-profile.html">تسجيل</a>
-            </div>
-          </form>
+            <form class="form-phone" action="add-new-survey-3.html">
+              <div
+                class="login-container-btn wait-accept d-flex flex-column justify-content-center align-items-center mb-5"
+              >
+                <a class="btn edit-survey col-3 mb-3" href="editing-survey.html"
+                  >تعديل الأستبيان</a
+                >
+                <a class="btn back-home col-3 mb-3" href="home.html"
+                  >الرجوع للرئيسية</a
+                >
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <!-- End Form Register -->
+    <!-- End Add New Survey -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">

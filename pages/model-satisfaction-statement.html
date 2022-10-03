@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>استبياناتي</title>
+    <title>تسجيل الدخول</title>
     <link rel="icon" href="../images/logo.png" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -12,13 +13,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../build/css/intlTelInput.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -266,219 +268,61 @@
     </div>
     <!-- End Open Survey Overlay -->
     <!-- End Navbar -->
-    <!-- Start satisfaction-statement 2 -->
-    <div class="satisfaction-statement-2">
-      <div class="container col-10 pb-5">
+    <!-- Start Satisfaction Statement -->
+    <div class="satisfaction-statement">
+      <div class="container d-flex justify-content-center align-items-center">
         <div
-          class="row g-0 d-flex justify-content-center align-items-center text-center"
+          class="row col-10 d-flex justify-content-center align-items-center"
         >
-          <div class="heading-satisfaction-statement text-center mt-3">
+          <div class="heading-satisfaction-statement text-center col-8">
             <h1 class="heading">نموذج استبيان رضاء العملاء</h1>
             <p class="text-black-50">
               هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
             </p>
           </div>
-          <div
-            class="survey-container-btn satisfaction-statement-btn mb-4 mt-4 col-10 d-flex justify-content-center align-items-center flex-row-reverse"
-          >
-            <button
-              class="survey-btn active-current col-3 p-3 m-3"
-              onclick="this.blur();"
-            >
-              ملخص الأستبيان
-            </button>
-            <button class="survey-btn col-3 p-3 m-3" onclick="this.blur();">
-              السؤال
-            </button>
-          </div>
-
-
-
-          
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-
-          
-          <div class="survey-container-body container col-6">
-            <div class="date-reply-container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="date-reply-heading p-4">
-                تاريخ <span class="text-black-50"><span>(2) </span> ردود</span>
-              </h4>
-              <div class="row-reply">
-                <div class="row justify-content-around container">
-                  <div class="col-6">
-                    <div class="date-reply text-start p-3 pb-0">
-                      فبراير 1999
-                    </div>
-                  </div>
-                  <div
-                    class="col-6 d-flex flex-row-reverse justify-content-end p-3 pb-0"
-                  >
-                    <span class="number-reply">16</span>
-                  </div>
-                </div>
-                <div class="row justify-content-around container">
-                  <div class="col-6">
-                    <div class="date-reply text-start p-3 pb-0">أغسطس 2022</div>
-                  </div>
-                  <div
-                    class="col-6 d-flex flex-row-reverse justify-content-end p-3 pb-0"
-                  >
-                    <span class="number-reply">16</span>
-                    <span class="number-reply">3</span>
-                  </div>
-                </div>
-                <div class="row justify-content-around container">
-                  <div class="col-6">
-                    <div class="date-reply text-start p-3 pb-0">
-                      سبتمبر 2022
-                    </div>
-                  </div>
-                  <div
-                    class="col-6 d-flex flex-row-reverse justify-content-end p-3 pb-3"
-                  >
-                    <span class="number-reply">9</span>
-                  </div>
-                </div>
+          <div class="satisfaction-statement-body col-8">
+            <div class="text-black-50">
+              <h5 class="text-black">تفاصيل الأستبيان</h5>
+              <div class="d-flex justify-content-between">
+                <p>عدد أيام عرض الاستبيان:</p>
+                <p class="text-black">15 يوم</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>عدد الأشخاص المستهدفين:</p>
+                <p class="text-black">1500 شخص</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>تاريخ الإنتهاء:</p>
+                <p class="text-black">15-5-2022</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>عدد الاسئلة:</p>
+                <p class="text-black">15 سؤال</p>
               </div>
             </div>
-            <div class="options-reply-container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="options-reply-heading p-4">
-                خيارات متعددة
-                <span class="text-black-50"><span> (2) </span> ردود</span>
-              </h4>
-              <div class="circle-chart container">
-                <canvas class="chart" id="optionChart"></canvas>
+            <div class="text-black-50">
+              <h5 class="text-black">تفاصيل المالية</h5>
+              <div class="d-flex justify-content-between">
+                <p>قيمة الأستبيان</p>
+                <p class="text-black">150 ريال</p>
               </div>
-            </div>
-            <div class="list-reply-container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="list-reply-heading p-4">
-                القائمة المنسدلة
-                <span class="text-black-50"><span> (2) </span> ردان</span>
-              </h4>
-              <div class="list-chart">
-                <canvas class="chart col-11" id="listChart"></canvas>
+              <div class="d-flex justify-content-between">
+                <p>القيمة المضافة</p>
+                <p class="text-black">150 ريال</p>
               </div>
-            </div>
-            <div class="net-reply-container container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="net-reply-heading p-4">
-                شبكة متعددة الخيارات
-                <span class="text-black-50"><span> (6) </span> ردود</span>
-              </h4>
-              <div class="net-chart">
-                <canvas class="chart col-11" id="netChart1"></canvas>
-              </div>
-            </div>
-            <div class="time-reply-container pb-5 pt-3 mb-4 mt-4">
-              <h4 class="time-reply-heading p-4">
-                تاريخ <span class="text-black-50"><span> (6) </span> ردود</span>
-              </h4>
-              <div class="row-reply">
-                <div class="row justify-content-start container">
-                  <div class="col-3">
-                    <div class="time-reply text-end p-3 pb-0">
-                      12:<span class="line"></span
-                      ><span class="letter-date">ص</span>
-                    </div>
-                  </div>
-                  <div
-                    class="col-3 d-flex flex-row-reverse justify-content-end p-3 pb-0"
+              <div class="text-black-50">
+                <hr />
+                <div class="d-flex justify-content-between">
+                  <p>المحموع الكلي</p>
+                  <p class="color-1">300 ريال</p>
+                </div>
+                <div class="reply-container-btn d-flex justify-content-center">
+                  <a
+                    class="btn reply-btn col-6 p-3 m-4"
+                    href="model-satisfaction-statement-2.html"
                   >
-                    <span class="number-reply">12:00ص</span>
-                  </div>
-                </div>
-                <div class="row justify-content-start container">
-                  <div class="col-3">
-                    <div class="time-reply text-end p-3 pb-0">
-                      06:<span class="line"></span
-                      ><span class="letter-date">ص</span>
-                    </div>
-                  </div>
-                  <div
-                    class="col-3 d-flex flex-row-reverse justify-content-end p-3 pb-0"
-                  >
-                    <span class="number-reply">06:20ص</span>
-                  </div>
-                </div>
-                <div class="row justify-content-start container">
-                  <div class="col-3">
-                    <div class="time-reply text-end p-3 pb-0">
-                      10:<span class="line"></span
-                      ><span class="letter-date">ص</span>
-                    </div>
-                  </div>
-                  <div
-                    class="col-3 d-flex flex-row-reverse justify-content-end p-3 pb-3"
-                  >
-                    <span class="number-reply">10:00ص</span>
-                  </div>
-                </div>
-                <div class="row justify-content-start container">
-                  <div class="col-3">
-                    <div class="time-reply text-end p-3 pb-0">
-                      11:<span class="line"></span
-                      ><span class="letter-date">ص</span>
-                    </div>
-                  </div>
-                  <div
-                    class="col-3 d-flex flex-row-reverse justify-content-end p-3 pb-3"
-                  >
-                    <span class="number-reply">11:30ص</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="net-reply-container container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="net-reply-heading p-4">
-                شبكة مربعات الخيارات
-                <span class="text-black-50"><span> (6) </span> ردود</span>
-              </h4>
-              <div class="net-chart">
-                <canvas class="chart col-11" id="netChart2"></canvas>
-              </div>
-            </div>
-            <div class="short-reply-container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="short-reply-heading p-4">
-                إجابة قصيرة
-                <span class="text-black-50"><span> (6) </span> ردود</span>
-              </h4>
-              <div class="row-reply row justify-content-around container">
-                <div class="short-reply p-3 pb-0">
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                </div>
-              </div>
-            </div>
-            <div class="pra-reply-container pb-5 pt-3 mb-3 mt-3">
-              <h4 class="pra-reply-heading p-4">
-                فقرة
-                <span class="text-black-50"><span> (6) </span> ردود</span>
-              </h4>
-              <div class="row-reply row justify-content-around container">
-                <div class="pra-reply p-3 pb-0">
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
-                  <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</p>
+                    الردود <span>195</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -486,7 +330,7 @@
         </div>
       </div>
     </div>
-    <!-- End satisfaction-statement 2 -->
+    <!-- End Satisfaction Statement -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">
@@ -532,11 +376,9 @@
               <ul class="list-unstyled lh-lg">
                 <li><a class="mb-3" href="#">عن الاستبيان</a></li>
                 <li><a class="mb-3" href="#">الاسبيانات</a></li>
-                <li>
-                  <a class="mb-3" href="pages/question.html">اسئلة متكررة</a>
-                </li>
+                <li><a class="mb-3" href="#">اسئلة متكررة</a></li>
                 <li><a class="mb-3" href="#">تواصل معنا</a></li>
-                <li><a class="mb-3" href="pages/articles.html">المقالات</a></li>
+                <li><a class="mb-3" href="#">المقالات</a></li>
               </ul>
             </div>
           </div>
@@ -554,7 +396,7 @@
           <div class="col-12 col-lg-4 mb-4 mt-4 mt-lg-0">
             <h5 class="heading mb-4">تواصل معنا</h5>
             <div
-              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
             >
               <a
                 class="text-decoration-none text-dark mt-0 mb-0 m-2"
@@ -568,7 +410,7 @@
               </span>
             </div>
             <div
-              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
             >
               <a
                 class="text-decoration-none text-dark mt-0 mb-0 m-2"
@@ -582,7 +424,7 @@
               </span>
             </div>
             <div
-              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-5 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
             >
               <p class="mt-0 mb-0 m-2">Street, Ali, Al Eyad</p>
               <span
@@ -639,116 +481,6 @@
     <script src="../js/all.min.js"></script>
     <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script src="../js/main.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    
-    <!-- Flow Chart -->
-    <script>
-      // Start Option Chart
-      let optionChart = document.getElementById("optionChart").getContext("2d");
-      let massPopChartOption = new Chart(optionChart, {
-        type: "pie",
-        data: {
-          labels: ["نعم", "ربما", "لا"],
-          datasets: [
-            {
-              label: ["العمود 1", "العمود 2", "العمود 3"],
-              data: [150, 40, 30],
-              backgroundColor: ["#009235", "#9cf44f", "#ffd22f"],
-            },
-          ],
-        },
-      });
-      // Start List Chart
-      let listChart = document.getElementById("listChart").getContext("2d");
-      let massPopChartList = new Chart(listChart, {
-        type: "pie",
-        data: {
-          labels: ["نعم", "ربما", "لا"],
-          datasets: [
-            {
-              label: ["العمود 1", "العمود 2", "العمود 3"],
-              data: [120, 60, 80],
-              backgroundColor: ["#009235", "#9cf44f", "#ffd22f"],
-            },
-          ],
-        },
-      });
-
-      // Start Net Chart 1
-      let netChart1 = document.getElementById("netChart1").getContext("2d");
-      let massPopChartNet1 = new Chart(netChart1, {
-        type: "bar",
-        data: {
-          labels: ["الصف 1", "الصف 2", "الصف 3", "الصف 4"],
-          datasets: [
-            {
-              label: ["العمود 1"],
-              data: [60, 0, 0, 0],
-              backgroundColor: ["#3366cc"],
-            },
-            {
-              label: ["العمود 2"],
-              data: [0, 30, 0, 0],
-              backgroundColor: ["#dc3912"],
-            },
-            {
-              label: ["العمود 3"],
-              data: [0, 0, 100, 0],
-              backgroundColor: ["#3366cc"],
-            },
-            {
-              label: ["العمود 4"],
-              data: [0, 0, 0, 50],
-              backgroundColor: ["#dc3912"],
-            },
-          ],
-        },
-      });
-      // Start Net Chart 2
-      let netChart2 = document.getElementById("netChart2").getContext("2d");
-      let massPopChartNet2 = new Chart(netChart2, {
-        type: "bar",
-        data: {
-          labels: ["الصف 1", "الصف 2", "الصف 3", "الصف 4"],
-          datasets: [
-            {
-              label: ["العمود 1"],
-              data: [60, 0, 0, 0],
-              backgroundColor: ["#3366cc"],
-            },
-            {
-              label: ["العمود 2"],
-              data: [0, 30, 0, 0],
-              backgroundColor: ["#dc3912"],
-            },
-            {
-              label: ["العمود 3"],
-              data: [0, 0, 100, 0],
-              backgroundColor: ["#3366cc"],
-            },
-            {
-              label: ["العمود 4"],
-              data: [0, 0, 0, 50],
-              backgroundColor: ["#dc3912"],
-            },
-          ],
-        },
-      });
-    </script>
   </body>
 </html>

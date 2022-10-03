@@ -206,94 +206,45 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Form Register -->
-    <div class="register-form">
-      <div class="container d-flex justify-content-center align-items-center">
-        <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-8 d-flex justify-content-center mb-5">
-            <img class="logo" src="../images/logo.png" alt="" />
+    <!-- Start Confirm Code -->
+<div class="send-code">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="row col-8 d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center m-5">
+          <img class="logo" src="../images/logo.png" alt="" />
+        </div>
+        <div class="heading-form col-10 mb-5">
+          <h1 class="login-heading-welcome heading mb-3">تأكيد رقم الجوال</h1>
+          <p class="text-black-50 mb-1">
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+            هذا النص من مولد النص العربى
+          </p>
+          <p class="text-black-50 mb-1">
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+          </p>
+        </div>
+        <form class="form-phone col-10" action="personal.html">
+          <div class="container-code-confirm mb-5">
+            <label for="code-confirm" class="form-label">كود التفعيل</label>
+            <input
+              type="text"
+              class="form-control code-confirm"
+              value=""
+              id="code-confirm"
+              required
+              placeholder="برجاء أدخل كود التفعيل"
+            />
           </div>
           <div
-            class="container points col-6 d-flex justify-content-between align-items-center text-center mt-5 mb-5"
+            class="confirm-container-btn login-container-btn d-flex justify-content-around align-items-center mt-5 mb-5"
           >
-            <div>
-              <h5 class="point point-1 active">البيانات الشخصية</h5>
-            </div>
-            <div>
-              <h5 class="point point-1 active">بيانات الحساب</h5>
-            </div>
+            <a class="col-6 btn confirm p-3" href="home.html">تفعيل الحساب</a>
           </div>
-          <div class="heading-form col-8">
-            <h1 class="login-heading-welcome">مرحبا بك!</h1>
-            <h2 class="login-heading-login">تسجيل دخول</h2>
-            <p class="text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-            </p>
-          </div>
-          <form class="form-phone col-8" action="register-2.html">
-            <div class="container-name-acc">
-              <label for="nameAcc" class="form-label">اسم صاحب الحساب</label>
-              <input
-                type="text"
-                class="form-control name_acc"
-                value=""
-                id="nameAcc"
-                required
-                placeholder="برجاء أدخل اسم صاحب الحساب"
-              />
-            </div>
-            <div class="container-bank">
-              <label for="bank" class="form-label">اسم البنك</label>
-              <input
-                type="text"
-                class="form-control bank"
-                value=""
-                id="bank"
-                required
-                placeholder="برجاء أدخل اسم البنك"
-              />
-            </div>
-            <div class="container-acc-number">
-              <label for="accNumber" class="form-label">رقم الحساب</label>
-              <input
-                type="number"
-                class="form-control acc-number"
-                value=""
-                id="accNumber"
-                required
-                placeholder="برجاء أدخل رقم الحساب"
-              />
-            </div>
-            <div class="container-conditions mt-3"></div>
-            <div
-              class="container-conditions d-flex align-items-center justify-content-center col-lg-8 col-md-9 col-12 mt-3"
-            >
-              <input
-                type="checkbox"
-                class="conditions"
-                value=""
-                id="conditions"
-                required
-              />
-              <label for="conditions" class="form-label col-12"
-                >الموافقة على
-                <span
-                  ><a class="text-decoration-none" href="conditions.html"
-                    >الشروط والأحكام</a
-                  ></span
-                ></label
-              >
-            </div>
-            <div
-              class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
-            >
-              <a class="btn add col-6" href="confirm-profile.html">تسجيل</a>
-            </div>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
-    <!-- End Form Register -->
+  </div>
+  <!-- End Confirm Code -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">

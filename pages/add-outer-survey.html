@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول</title>
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="nav-contact">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <p class="text-center col-lg-10 col-md-10 col-sm-12 mt-2">
+            astbyan@gmail.com / 96601555977744 - 96601555977744
+          </p>
+          <form class="col-lg-2 col-md-2 col-sm-12 text-center">
+            <button
+              class="btn lang-btn mt-1 mb-2"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
+              <i class="fa-solid fa-globe"></i><span> English</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container flex-row-reverse col-12">
+        <a href="../index.html"
+          ><img class="logo" src="../images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse w-100" id="main">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center text-center flex-lg-row-reverse col-lg-8 col-12"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عن الاستبيان</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> استبيانات </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">أسئلة متكررة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المقالات</a>
+            </li>
+          </ul>
+          <form
+            class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
+          >
+            <a
+              href="pages/home.html"
+              class="btn login"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
+              تسجيل الدخول
+            </a>
+            <!-- Start Open Survey Overlay -->
+            <button
+              class="btn add-survey survey-btn-index"
+              type="button"
+              value=""
+            >
+              إضافة طلب استبيان
+            </button>
+            <div class="popup-overlay" style="display: none"></div>
+            <div class="container-survey" style="display: none">
+              <div class="container col-6 pb-5">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="heading-survey mt-5 mb-4">
+                    <h1>إضافة استبيان جديد</h1>
+                    <p class="text-black-50">
+                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    </p>
+                  </div>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div
+                          class="col-md-8 d-flex justify-content-end text-end"
+                        >
+                          <div class="card-body">
+                            <h2 class="h2">أضف استبيان</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="../images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div
+                          class="col-md-8 d-flex justify-content-end text-end"
+                        >
+                          <div class="card-body">
+                            <h2 class="h2">أضف استبيان خارجي</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="../images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div
+                          class="col-md-8 d-flex justify-content-end text-end"
+                        >
+                          <div class="card-body">
+                            <h2 class="h2">أضف خدمات بحثية</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="../images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End Open Survey Overlay -->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Add New Survey -->
+    <div class="add-new-survey-form">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-8 d-flex justify-content-center mb-5">
+            <h1 class="heading">إضافة أستبيان خارجي</h1>
+          </div>
+          <div
+            class="container outer-survey points col-8 d-flex justify-content-around align-items-center text-center mt-5 mb-5"
+          >
+            <div>
+              <h5 class="point point-1 active">تفاصيل الأستبيان</h5>
+            </div>
+            <div>
+              <h5 class="point">القبول والدفع</h5>
+            </div>
+          </div>
+          <form class="form-phone col-8" action="register-2.html">
+            <div class="container-name-survey mt-3 mb-3">
+              <label for="name-survey" class="form-label">عنوان الاستبيان</label>
+              <input
+                type="text"
+                class="form-control name-survey"
+                value=""
+                id="name-survey"
+                required
+                placeholder="برجاء أدخل عنوان الأستبيان"
+              />
+            </div>
+            <div class="container-describtion-survey mt-3 mb-3">
+              <label for="describtion-survey" class="form-label"
+                >وصف الأستبيان</label
+              >
+              <textarea
+                class="form-control describtion-survey"
+                value=""
+                id="describtion-survey"
+                required
+                placeholder="برجاء أدخل وصف الأستبيان"
+              ></textarea>
+            </div>
+            <div class="container-link-survey mt-3 mb-3">
+                <label for="link-survey" class="form-label">لينك الاستبيان</label>
+                <input
+                  type="text"
+                  class="form-control link-survey"
+                  value=""
+                  id="link-survey"
+                  required
+                  placeholder="برجاء أدخل عنوان الأستبيان"
+                />
+              </div>
+            <div class="container-person-num mt-3 mb-3">
+              <label for="person-num" class="form-label"
+                >عدد الأشخاص المستهدفين</label
+              >
+              <input
+                type="number"
+                class="form-control person-num"
+                value=""
+                id="person-num"
+                required
+                placeholder="برجاء أدخل عدد الأشخاص المستهدفين"
+              />
+            </div>
+            <div class="container-days-num mt-3 mb-3">
+              <label for="days-num" class="form-label"
+                >عدد أيام عرض الأستبيان</label
+              >
+              <input
+                type="number"
+                class="form-control days-num"
+                value=""
+                id="days-num"
+                required
+                placeholder="برجاء أدخل عدد أيام عرض الأستبيان"
+              />
+            </div>
+            <div class="container-quest-num mt-3 mb-3">
+              <label for="quest-num" class="form-label"
+                >عدد أسئلة الأستبيان</label
+              >
+              <input
+                type="number"
+                class="form-control quest-num"
+                value=""
+                id="quest-num"
+                required
+                placeholder="برجاء أدخل عدد أسئلة الأستبيان"
+              />
+            </div>
+            <div
+                class="d-flex flex-column text-end justify-content-center align-items-center"
+              >
+                <div class="container-category col-12 mt-2 mb-3">
+                    <label class="form-label fw-bold">الفئة المستهدفة</label>
+                    <div class="add-category">
+                        <a class="d-flex justify-content-between align-items-center text-decoration-none" href="add-category.html">
+                            <span>برجاء إضافة الفئات المستهدفة</span>
+                        </a>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                </div>
+                <div class="add-name-category col-lg-8 justify-content-center d-flex col-md-10 col-12  mt-2 mb-3">
+                    <div class="add-name-category-container col-10 d-flex justify-content-between align-items-center text-center">
+                        <a href="editing-categroy.html">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                        <p class="col-10">اسم الفئة المستهدفة</p>
+                        <i class="fa-solid fa-xmark text-danger fs-5"></i>
+                    </div>
+                </div>
+                <div class="add-name-category col-lg-8 justify-content-center d-flex col-md-10 col-12  mt-2 mb-3">
+                    <div class="add-name-category-container col-10 d-flex justify-content-between align-items-center text-center">
+                        <a href="editing-categroy.html">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                        <p class="col-10">اسم الفئة المستهدفة</p>
+                        <i class="fa-solid fa-xmark text-danger fs-5"></i>
+                    </div>
+                </div>
+                <div class="add-name-category col-lg-8 justify-content-center d-flex col-md-10 col-12  mt-2 mb-3">
+                    <div class="add-name-category-container col-10 d-flex justify-content-between align-items-center text-center">
+                        <a href="editing-categroy.html">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                        <p class="col-10">اسم الفئة المستهدفة</p>
+                        <i class="fa-solid fa-xmark text-danger fs-5"></i>
+                    </div>
+                </div>
+                <div class="add-name-category col-lg-8 justify-content-center d-flex col-md-10 col-12  mt-2 mb-3">
+                    <div class="add-name-category-container col-10 d-flex justify-content-between align-items-center text-center">
+                        <a href="editing-categroy.html">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                        <p class="col-10">اسم الفئة المستهدفة</p>
+                        <i class="fa-solid fa-xmark text-danger fs-5"></i>
+                    </div>
+                </div>
+              </div>
+            <div
+              class="login-container-btn wait-accept col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
+            >
+              <button class="btn edit-survey send-order-btn col-6">أرسل الطلب</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Start Success Feedback -->
+    <div class="container-success-send-order" style="display: none">
+      <div class="container col-lg-4 col-6 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="heading-overlay mt-5">
+            <i class="fa-solid fa-circle-check"></i>
+            <p class="mt-4">
+              تهانينا تم إرسال الأستبيان إلى إدارة التطبيق بنجاح بانتظار الموافقة وتحديد سعر الأستبيان
+            </p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center mt-5 mb-4"
+          >
+            <a class="btn success-send-order-btn col-6" href="add-outer-survey-2.html">
+              الرجوع للرئيسية
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Success Feedback -->
+    <!-- End Add New Survey -->
+    <!-- Start Footer -->
+    <div class="footer text-center">
+      <div class="container">
+        <div
+          class="row d-flex justify-content-center text-center flex-row-reverse pt-lg-5 pt-5"
+        >
+          <div class="col-12 col-lg-4 mb-3 text-center text-lg-end mt-0">
+            <a href="../index.html"
+              ><img class="logo mb-3" src="../images/logo.png" alt=""
+            /></a>
+            <p class="mb-5 text-black-50 lh-base">
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+              هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+              العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+              التطبيق.
+            </p>
+            <form
+              class="d-flex input-group mb-5 justify-content-end"
+              role="search"
+            >
+              <button
+                class="btn surveys-btn d-flex align-items-center text-center justify-content-center"
+                onclick="this.blur();"
+                type="button"
+                value=""
+                style="border-radius: 10px"
+              >
+                اشترك الأن
+              </button>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Estbyan@Gmail.com"
+                value=""
+                aria-label="Search"
+                style="border-radius: 10px"
+              />
+            </form>
+          </div>
+          <div class="col-8 col-sm-6 col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="heading mb-4">استبيان</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a class="mb-3" href="#">عن الاستبيان</a></li>
+                <li><a class="mb-3" href="#">الاسبيانات</a></li>
+                <li><a class="mb-3" href="#">اسئلة متكررة</a></li>
+                <li><a class="mb-3" href="#">تواصل معنا</a></li>
+                <li><a class="mb-3" href="#">المقالات</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-8 col-sm-6 col-md-6 col-lg-2 mt-lg-5 mt-md-5 mt-sm-5 mt-2"
+          >
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li><a class="mb-3 mt-5" href="#">أضف استبيان جديد</a></li>
+                <li><a class="mb-3" href="#">أضف استبيان خارجي</a></li>
+                <li><a class="mb-3" href="#">أضف استبيان بحثي</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-4 mt-4 mt-lg-0">
+            <h5 class="heading mb-4">تواصل معنا</h5>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <a
+                class="text-decoration-none text-dark mt-0 mb-0 m-2"
+                href="mailto:ErtKazArt@gmail.com"
+                >ErtKazArt@gmail.com</a
+              >
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <a
+                class="text-decoration-none text-dark mt-0 mb-0 m-2"
+                href="tel:+96605124123"
+                >+96605124123</a
+              >
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-phone-flip"></i>
+              </span>
+            </div>
+            <div
+              class="d-flex justify-content-end align-items-center m-3 col-lg-9 col-md-8 col-9 pe-5 pe-sm-3 pe-md-4 pe-lg-3 pe-xl-3 pe-xxl-3"
+            >
+              <p class="mt-0 mb-0 m-2">Street, Ali, Al Eyad</p>
+              <span
+                class="d-flex justify-content-center align-items-center color-circle me-lg-0 me-md-0 me-3"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+            <div
+              class="social-media d-flex justify-content-center align-items-center text-center"
+            >
+              <a
+                class="m-2 facebook d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/facebook.png" alt="facebook" />
+              </a>
+              <a
+                class="m-2 twitter d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/twitter.png" alt="twitter" />
+              </a>
+              <a
+                class="m-2 instagram d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/instagram.png" alt="instagram" />
+              </a>
+              <a
+                class="m-2 snapchat d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/snapchat.png" alt="snapchat" />
+              </a>
+              <a
+                class="m-2 whatsapp d-flex justify-content-center align-items-center text-center"
+                href="#"
+              >
+                <img src="../images/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <!-- Copyright -->
+      <div class="copyright mt-4">
+        <p>Copyright &copy; 2022 Estbianat</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

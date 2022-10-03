@@ -18,7 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../build/css/intlTelInput.css" />
     <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -85,81 +84,16 @@
           <form
             class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
           >
-            <a class="alert" href="alert.html"
-              ><i class="fa-regular fa-bell"></i>
-              <span class="alert-circle"></span>
+            <a
+              href="pages/home.html"
+              class="btn login"
+              onclick="this.blur();"
+              type="button"
+              value=""
+            >
+              تسجيل الدخول
             </a>
-            <div class="dropdown">
-              <button
-                class="btn profile d-flex justify-content-center align-items-center text-center"
-                onclick="this.blur();"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-angle-up"></i>
-                الملف الشخصي
-                <i class="fa-solid fa-user"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >الملف الشخصي</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="survey.html"
-                    >استبياناتي</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >الفواتير</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >المحفظة</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >الشكاوي والمقترحات</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >الشروط والأحكام</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >عن المنصة</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="nav-item d-flex justify-content-end align-items-center text-center me-0 pe-3 ms-0 ps-2"
-                    href="#"
-                    >تسجيل خروج</a
-                  >
-                </li>
-              </ul>
-            </div>
+            <!-- Start Open Survey Overlay -->
             <button
               class="btn add-survey survey-btn-index"
               type="button"
@@ -167,169 +101,248 @@
             >
               إضافة طلب استبيان
             </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Start Open Survey Overlay -->
-    <div class="popup-overlay" style="display: none"></div>
-    <div class="container-survey" style="display: none">
-      <div class="container col-6 pb-5">
-        <div
-          class="row g-0 d-flex justify-content-center align-items-center text-center"
-        >
-          <div class="heading-survey mt-5 mb-4">
-            <h1>إضافة استبيان جديد</h1>
-            <p class="text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-            </p>
-          </div>
-          <a
-            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
-            href="add-survey.html"
-          >
-            <div class="card p-3">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <h2 class="h2">أضف استبيان</h2>
+            <div class="popup-overlay" style="display: none"></div>
+            <div class="container-survey" style="display: none">
+              <div class="container col-6 pb-5">
+                <div
+                  class="row g-0 d-flex justify-content-center align-items-center text-center"
+                >
+                  <div class="heading-survey mt-5 mb-4">
+                    <h1>إضافة استبيان جديد</h1>
                     <p class="text-black-50">
                       هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
                     </p>
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
-            href="add-survey.html"
-          >
-            <div class="card p-3">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <h2 class="h2">أضف استبيان خارجي</h2>
-                    <p class="text-black-50">
-                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
-            href="add-survey.html"
-          >
-            <div class="card p-3">
-              <div
-                class="row g-0 d-flex justify-content-center align-items-center text-center"
-              >
-                <div class="col-md-8 d-flex justify-content-end text-end">
-                  <div class="card-body">
-                    <h2 class="h2">أضف خدمات بحثية</h2>
-                    <p class="text-black-50">
-                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <img
-                    src="../images/01.jpg"
-                    class="img-fluid rounded-start"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- End Open Survey Overlay -->
-    <!-- End Navbar -->
-    <!-- Start Satisfaction Statement -->
-    <div class="satisfaction-statement">
-      <div class="container d-flex justify-content-center align-items-center">
-        <div
-          class="row col-10 d-flex justify-content-center align-items-center"
-        >
-          <div class="heading-satisfaction-statement text-center col-8">
-            <h1 class="heading">نموذج استبيان رضاء العملاء</h1>
-            <p class="text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-            </p>
-          </div>
-          <div class="satisfaction-statement-body col-8">
-            <div class="text-black-50">
-              <h5 class="text-black">تفاصيل الأستبيان</h5>
-              <div class="d-flex justify-content-between">
-                <p>عدد أيام عرض الاستبيان:</p>
-                <p class="text-black">15 يوم</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p>عدد الأشخاص المستهدفين:</p>
-                <p class="text-black">1500 شخص</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p>تاريخ الإنتهاء:</p>
-                <p class="text-black">15-5-2022</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p>عدد الاسئلة:</p>
-                <p class="text-black">15 سؤال</p>
-              </div>
-            </div>
-            <div class="text-black-50">
-              <h5 class="text-black">تفاصيل المالية</h5>
-              <div class="d-flex justify-content-between">
-                <p>قيمة الأستبيان</p>
-                <p class="text-black">150 ريال</p>
-              </div>
-              <div class="d-flex justify-content-between">
-                <p>القيمة المضافة</p>
-                <p class="text-black">150 ريال</p>
-              </div>
-              <div class="text-black-50">
-                <hr />
-                <div class="d-flex justify-content-between">
-                  <p>المحموع الكلي</p>
-                  <p class="color-1">300 ريال</p>
-                </div>
-                <div class="reply-container-btn d-flex justify-content-center">
                   <a
-                    class="btn reply-btn col-6 p-3 m-4"
-                    href="satisfaction-statement-2.html"
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
                   >
-                    الردود <span>195</span>
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div
+                          class="col-md-8 d-flex justify-content-end text-end"
+                        >
+                          <div class="card-body">
+                            <h2 class="h2">أضف استبيان</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="../images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div
+                          class="col-md-8 d-flex justify-content-end text-end"
+                        >
+                          <div class="card-body">
+                            <h2 class="h2">أضف استبيان خارجي</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="../images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    class="text-decoration-none col-8 mb-3 d-flex justify-content-center"
+                    href="add-survey.html"
+                  >
+                    <div class="card p-3">
+                      <div
+                        class="row g-0 d-flex justify-content-center align-items-center text-center"
+                      >
+                        <div
+                          class="col-md-8 d-flex justify-content-end text-end"
+                        >
+                          <div class="card-body">
+                            <h2 class="h2">أضف خدمات بحثية</h2>
+                            <p class="text-black-50">
+                              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                            </p>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <img
+                            src="../images/01.jpg"
+                            class="img-fluid rounded-start"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </a>
                 </div>
               </div>
             </div>
+            <!-- End Open Survey Overlay -->
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Add New Survey -->
+    <div class="add-new-survey-form">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-8 d-flex justify-content-center mb-5">
+            <h1 class="heading">إضافة أستبيان</h1>
+          </div>
+          <div
+            class="container points col-8 d-flex justify-content-around align-items-center text-center mt-5"
+          >
+            <div>
+              <h5 class="point point-1 active">تفاصيل الأستبيان</h5>
+            </div>
+            <div>
+              <h5 class="point point-1 active">إضافة الأسئلة</h5>
+            </div>
+            <div>
+              <h5 class="point point-1 active">الفئة المستهدفة</h5>
+            </div>
+            <div>
+              <h5 class="point point-1 active">القبول والدفع</h5>
+            </div>
+          </div>
+          <div
+            class="col-7 d-flex flex-column text-center justify-content-center align-items-center mt-5"
+          >
+            <img class="mb-5" src="../images/success.gif" alt="" />
+            <p class="fs-5 fw-bold mt-3">
+              تم قبول الأستبيان بنجاح قم بتسديد قيمة الأستبيان للبدأ
+            </p>
+          </div>
+          <div class="col-6 details-bill m-5 mb-3">
+            <div
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-end text-black fw-bold">التفاصيل المالية :</p>
+            </div>
+            <div
+              class="d-flex justify-content-between text-center mt-2"
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-black-50">قيمة الاستبيان :</p>
+              <p class="text-black fw-bold col-2"><span>1500</span> ر.س</p>
+            </div>
+            <div
+              class="d-flex justify-content-between text-center mt-2"
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-black-50">القيمة المضافة :</p>
+              <p class="text-black fw-bold col-2"><span>1500</span> ر.س</p>
+            </div>
+            <div class="d-flex justify-content-between text-center mt-2">
+              <p class="text-black fw-bold">المجموع الكلي :</p>
+              <p class="color-1 fw-bold col-2"><span>1500</span> ر.س</p>
+            </div>
+          </div>
+          <div class="col-6 details-pay m-5 mt-2 mb-3">
+            <div
+              style="
+                border: 1px solid;
+                border-color: transparent transparent #00000020 transparent;
+              "
+            >
+              <p class="text-end text-black fw-bold">اختيار طريقة الدفع :</p>
+            </div>
+            <div class="credit col-12 mt-4 mb-3">
+              <div
+                class="credit-container col-12 d-flex justify-content-between align-items-center mt-8"
+              >
+                <div>
+                  <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="d-block col-10">
+                  <p class="fw-bold mt-3 mb-2">بطاقة إئتمانية</p>
+                  <p>الدفع بابطاقة الإئتمانية</p>
+                </div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+            <div class="wallet col-12 mt-2 mb-3">
+              <div
+                class="wallet-container col-12 d-flex justify-content-between align-items-center"
+              >
+                <div>
+                  <i class="fa-solid fa-wallet"></i>
+                </div>
+                <div class="d-block col-10">
+                  <p class="fw-bold mt-3 mb-2">المحفظة</p>
+                  <p>يمكنك الدفع عن طريق المحفظة</p>
+                </div>
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+          </div>
+          <div class="form-phone col-8">
+            <div
+              class="login-container-btn wait-accept col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
+            >
+              <button class="btn edit-survey send-order-btn col-6 p-3">
+                أدفع الآن
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Satisfaction Statement -->
+    <!-- Start Success Feedback -->
+    <div class="container-success-send-order" style="display: none">
+      <div class="container col-lg-4 col-6 pb-5">
+        <div
+          class="row g-0 d-flex justify-content-center align-items-center text-center"
+        >
+          <div class="heading-overlay mt-5">
+            <i class="fa-solid fa-circle-check"></i>
+            <p class="mt-4">تم الدفع بنجاح وإضافة الأستبيان بنجاح</p>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center mt-5 mb-4"
+          >
+            <a class="btn success-send-order-btn col-6" href="home.html">
+              الرجوع للرئيسية
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Success Feedback -->
+    <!-- End Add New Survey -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">

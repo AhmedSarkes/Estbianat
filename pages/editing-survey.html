@@ -206,94 +206,89 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <!-- Start Form Register -->
-    <div class="register-form">
+    <!-- Start Add New Survey -->
+    <div class="add-new-survey-form">
       <div class="container d-flex justify-content-center align-items-center">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-8 d-flex justify-content-center mb-5">
-            <img class="logo" src="../images/logo.png" alt="" />
+            <h1 class="heading">تعديل أستبيان</h1>
           </div>
           <div
-            class="container points col-6 d-flex justify-content-between align-items-center text-center mt-5 mb-5"
+            class="container points col-8 d-flex justify-content-around align-items-center text-center mt-5 mb-5"
           >
             <div>
-              <h5 class="point point-1 active">البيانات الشخصية</h5>
+              <h5 class="point point-1 active">تفاصيل الأستبيان</h5>
             </div>
             <div>
-              <h5 class="point point-1 active">بيانات الحساب</h5>
+              <h5 class="point">إضافة الأسئلة</h5>
             </div>
-          </div>
-          <div class="heading-form col-8">
-            <h1 class="login-heading-welcome">مرحبا بك!</h1>
-            <h2 class="login-heading-login">تسجيل دخول</h2>
-            <p class="text-black-50">
-              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
-            </p>
+            <div>
+              <h5 class="point">الفئة المستهدفة</h5>
+            </div>
+            <div>
+              <h5 class="point">القبول والدفع</h5>
+            </div>
           </div>
           <form class="form-phone col-8" action="register-2.html">
-            <div class="container-name-acc">
-              <label for="nameAcc" class="form-label">اسم صاحب الحساب</label>
+            <div class="container-name-survey mt-3 mb-3">
+              <label for="name-survey" class="form-label">اسم الاستبيان</label>
               <input
                 type="text"
-                class="form-control name_acc"
+                class="form-control name-survey"
                 value=""
-                id="nameAcc"
+                id="name-survey"
                 required
-                placeholder="برجاء أدخل اسم صاحب الحساب"
+                placeholder="برجاء أدخل اسم الأستبيان"
               />
             </div>
-            <div class="container-bank">
-              <label for="bank" class="form-label">اسم البنك</label>
-              <input
-                type="text"
-                class="form-control bank"
+            <div class="container-describtion-survey mt-3 mb-3">
+              <label for="describtion-survey" class="form-label"
+                >وصف الأستبيان</label
+              >
+              <textarea
+                class="form-control describtion-survey"
                 value=""
-                id="bank"
+                id="describtion-survey"
                 required
-                placeholder="برجاء أدخل اسم البنك"
-              />
+                placeholder="برجاء أدخل وصف الأستبيان"
+              ></textarea>
             </div>
-            <div class="container-acc-number">
-              <label for="accNumber" class="form-label">رقم الحساب</label>
+            <div class="container-person-num mt-3 mb-3">
+              <label for="person-num" class="form-label"
+                >عدد الأشخاص المستهدفين</label
+              >
               <input
                 type="number"
-                class="form-control acc-number"
+                class="form-control person-num"
                 value=""
-                id="accNumber"
+                id="person-num"
                 required
-                placeholder="برجاء أدخل رقم الحساب"
+                placeholder="برجاء أدخل عدد الأشخاص المستهدفين"
               />
             </div>
-            <div class="container-conditions mt-3"></div>
-            <div
-              class="container-conditions d-flex align-items-center justify-content-center col-lg-8 col-md-9 col-12 mt-3"
-            >
-              <input
-                type="checkbox"
-                class="conditions"
-                value=""
-                id="conditions"
-                required
-              />
-              <label for="conditions" class="form-label col-12"
-                >الموافقة على
-                <span
-                  ><a class="text-decoration-none" href="conditions.html"
-                    >الشروط والأحكام</a
-                  ></span
-                ></label
+            <div class="container-days-num mt-3 mb-3">
+              <label for="days-num" class="form-label"
+                >عدد أيام عرض الأستبيان</label
               >
+              <input
+                type="number"
+                class="form-control days-num"
+                value=""
+                id="days-num"
+                required
+                placeholder="برجاء أدخل عدد أيام عرض الأستبيان"
+              />
             </div>
             <div
-              class="login-container-btn col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
+              class="login-container-btn wait-accept col-12 d-flex justify-content-center align-items-center mt-5 mb-5"
             >
-              <a class="btn add col-6" href="confirm-profile.html">تسجيل</a>
+              <a class="btn edit-survey col-6" href="editing-survey-2.html">التالي</a>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <!-- End Form Register -->
+    <!-- End Add New Survey -->
     <!-- Start Footer -->
     <div class="footer text-center">
       <div class="container">
