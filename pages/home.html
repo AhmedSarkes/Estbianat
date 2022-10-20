@@ -67,27 +67,39 @@
             class="navbar-nav d-flex justify-content-around align-items-center text-center flex-lg-row-reverse col-lg-8 col-11 m-xxl-3 m-xl-2 m-lg-1 m-0"
           >
             <li class="nav-item">
-              <a class="nav-link m-lg-0 m-md-1 active" href="#">الرئيسية</a>
+              <a class="nav-link m-lg-0 m-md-1 active" href="home.html"
+                >الرئيسية</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link m-lg-0 m-md-1" href="#">عن الاستبيان</a>
+              <a class="nav-link m-lg-0 m-md-1" href="#aboutSurvey"
+                >عن الاستبيان</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link m-lg-0 m-md-1" href="#"> استبيانات </a>
+              <a class="nav-link m-lg-0 m-md-1" href="surveys.html">
+                استبيانات
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link m-lg-0 m-md-1" href="#">أسئلة متكررة</a>
+              <a class="nav-link m-lg-0 m-md-1" href="question.html"
+                >أسئلة متكررة</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link m-lg-0 m-md-1" href="#">تواصل معنا</a>
+              <a class="nav-link m-lg-0 m-md-1" href="contact-us.html"
+                >تواصل معنا</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link m-lg-0 m-md-1" href="#">المقالات</a>
+              <a class="nav-link m-lg-0 m-md-1" href="articles.html"
+                >المقالات</a
+              >
             </li>
             <a class="alert m-0 d-xxl-flex d-lg-flex d-none" href="alert.html"
-            ><i class="fa-regular fa-bell"></i>
-            <span class="alert-circle"></span>
-          </a>
+              ><i class="fa-regular fa-bell"></i>
+              <span class="alert-circle"></span>
+            </a>
           </ul>
           <form
             class="col-lg-4 col-12 d-flex justify-content-round align-items-center flex-lg-row-reverse flex-column mt-2 mt-lg-0 mb-4 mb-lg-0"
@@ -340,7 +352,7 @@
     </div>
     <!-- End Landing -->
     <!-- Start About Survey -->
-    <div class="about-survey">
+    <div class="about-survey" id="aboutSurvey">
       <!-- Start Heading -->
       <div class="container about-survey-head">
         <div class="row">
@@ -400,22 +412,32 @@
               <form
                 class="d-flex justify-content-between flex-row-reverse mt-5 mb-5"
               >
-                <button
-                  class="btn col-5 p-lg-3 surveys-btn"
-                  onclick="this.blur();"
-                  type="button"
-                  value=""
+                <a
+                  class="col-5 d-flex justify-content-lg-end justify-content-md-end justify-content-center text-decoration-none mt-5 mb-5"
+                  href="editing-survey-3.html"
                 >
-                  الأستبيانات
-                </button>
-                <button
-                  class="btn col-5 p-lg-3 add-survey"
-                  onclick="this.blur();"
-                  type="button"
-                  value=""
+                  <button
+                    class="btn col-12 p-lg-3 surveys-btn"
+                    onclick="this.blur();"
+                    type="button"
+                    value=""
+                  >
+                    الأستبيانات
+                  </button>
+                </a>
+                <a
+                  class="col-5 d-flex justify-content-lg-end justify-content-md-end justify-content-center text-decoration-none mt-5 mb-5"
+                  href="surveys.html"
                 >
-                  إضافة استبيان
-                </button>
+                  <button
+                    class="btn col-12 p-lg-3 add-survey"
+                    onclick="this.blur();"
+                    type="button"
+                    value=""
+                  >
+                    إضافة استبيان
+                  </button>
+                </a>
               </form>
             </div>
           </div>
@@ -473,7 +495,7 @@
                   </p>
                   <a
                     class="d-flex justify-content-lg-end justify-content-md-end justify-content-center text-decoration-none mt-5 mb-5"
-                    href="add-services-research.html"
+                    href="editing-survey-3.html"
                   >
                     <button
                       class="btn col-6 p-lg-3 surveys-btn"
@@ -550,7 +572,7 @@
                       type="button"
                       value=""
                     >
-                      ارسال طلب استبيان خارجي
+                      ارسال طلب خدمات بحثية
                     </button>
                   </a>
                 </div>
@@ -678,8 +700,9 @@
               العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي
               أخطاء لغوية.
             </p>
-            <form
-              class="d-flex justify-content-center justify-content-center mt-5 mb-5"
+            <a
+              class="d-flex justify-content-center justify-content-center mt-5 mb-5 text-decoration-none"
+              href="surveys.html"
             >
               <button
                 class="btn col-lg-3 col-md-6 col-9 p-lg-3 mb-5 surveys-btn"
@@ -689,7 +712,7 @@
               >
                 اجب على الاسبيانات
               </button>
-            </form>
+            </a>
           </div>
         </div>
       </div>
@@ -728,7 +751,7 @@
               <p class="pra text-black-50">
                 توظيف البناء في امن البنية التحتية نعمل علي التطوير
               </p>
-              <a class="more-div text-decoration-none" href="#">
+              <a class="more-div text-decoration-none" href="article.html">
                 <span>اقرأ المزيد</span>
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </a>
@@ -746,7 +769,7 @@
               <p class="pra text-black-50">
                 توظيف البناء في امن البنية التحتية نعمل علي التطوير
               </p>
-              <a class="more-div text-decoration-none" href="#">
+              <a class="more-div text-decoration-none" href="article.html">
                 <span>اقرأ المزيد</span>
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </a>
@@ -764,7 +787,7 @@
               <p class="pra text-black-50">
                 توظيف البناء في امن البنية التحتية نعمل علي التطوير
               </p>
-              <a class="more-div text-decoration-none" href="#">
+              <a class="more-div text-decoration-none" href="article.html">
                 <span>اقرأ المزيد</span>
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </a>
@@ -782,7 +805,7 @@
               <p class="pra text-black-50">
                 توظيف البناء في امن البنية التحتية نعمل علي التطوير
               </p>
-              <a class="more-div text-decoration-none" href="#">
+              <a class="more-div text-decoration-none" href="article.html">
                 <span>اقرأ المزيد</span>
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </a>
@@ -800,7 +823,7 @@
               <p class="pra text-black-50">
                 توظيف البناء في امن البنية التحتية نعمل علي التطوير
               </p>
-              <a class="more-div text-decoration-none" href="#">
+              <a class="more-div text-decoration-none" href="article.html">
                 <span>اقرأ المزيد</span>
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </a>
@@ -818,7 +841,7 @@
               <p class="pra text-black-50">
                 توظيف البناء في امن البنية التحتية نعمل علي التطوير
               </p>
-              <a class="more-div text-decoration-none" href="#">
+              <a class="more-div text-decoration-none" href="article.html">
                 <span>اقرأ المزيد</span>
                 <i class="fa-solid fa-circle-arrow-left"></i>
               </a>
@@ -828,8 +851,9 @@
       </div>
       <!-- End Body -->
       <!-- Start Button -->
-      <form
-        class="d-flex justify-content-center justify-content-center mt-5 mb-5"
+      <a
+        class="d-flex justify-content-center justify-content-center mt-5 mb-5 text-decoration-none"
+        href="articles.html"
       >
         <button
           class="btn col-lg-2 col-4 p-lg-3 mb-5 surveys-btn"
@@ -839,7 +863,7 @@
         >
           كل المقالات
         </button>
-      </form>
+      </a>
       <!-- End Button -->
     </div>
     <!-- End Articles -->
@@ -986,8 +1010,9 @@
       </div>
       <!-- End Body -->
       <!-- Start Button -->
-      <form
-        class="d-flex justify-content-center justify-content-center mt-5 mb-5"
+      <a
+        class="d-flex justify-content-center justify-content-center mt-5 mb-5 text-decoration-none"
+        href="question.html"
       >
         <button
           class="btn col-lg-2 col-4 p-lg-3 mb-5 surveys-btn"
@@ -997,7 +1022,7 @@
         >
           كل الأسئلة الشائعة
         </button>
-      </form>
+      </a>
       <!-- End Button -->
     </div>
     <!-- End Questions -->
@@ -1109,11 +1134,13 @@
             <div class="links">
               <h5 class="heading mb-4">استبيان</h5>
               <ul class="list-unstyled lh-lg">
-                <li><a class="mb-3" href="#">عن الاستبيان</a></li>
-                <li><a class="mb-3" href="#">الاسبيانات</a></li>
-                <li><a class="mb-3" href="#">اسئلة متكررة</a></li>
-                <li><a class="mb-3" href="#">تواصل معنا</a></li>
-                <li><a class="mb-3" href="#">المقالات</a></li>
+                <li><a class="mb-3" href="#aboutSurvey">عن الاستبيان</a></li>
+                <li><a class="mb-3" href="surveys.html">الاسبيانات</a></li>
+                <li><a class="mb-3" href="question.html">اسئلة متكررة</a></li>
+                <li>
+                  <a class="mb-3" href="contact-us.html">تواصل معنا</a>
+                </li>
+                <li><a class="mb-3" href="articles.html">المقالات</a></li>
               </ul>
             </div>
           </div>
@@ -1122,9 +1149,21 @@
           >
             <div class="links">
               <ul class="list-unstyled lh-lg">
-                <li><a class="mb-3 mt-5" href="#">أضف استبيان جديد</a></li>
-                <li><a class="mb-3" href="#">أضف استبيان خارجي</a></li>
-                <li><a class="mb-3" href="#">أضف استبيان بحثي</a></li>
+                <li>
+                  <a class="mb-3 mt-5" href="editing-survey-3.html"
+                    >أضف استبيان جديد</a
+                  >
+                </li>
+                <li>
+                  <a class="mb-3" href="add-outer-survey.html"
+                    >أضف استبيان خارجي</a
+                  >
+                </li>
+                <li>
+                  <a class="mb-3" href="add-services-research.html"
+                    >أضف استبيان بحثي</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
