@@ -446,7 +446,7 @@ body {
 .alert,
 .alert svg {
   color: #2ca061;
-  font-size: 22px;
+  font-size: 30px;
   padding: 0;
   margin: 0 0 0 0;
   border-radius: 50%;
@@ -1836,6 +1836,14 @@ tr {
   .navbar {
     position: relative;
   }
+  .navbar-fixed {
+    background: #f8faf4;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    transition: 0.5s;
+  }
   .navbar .navbar-collapse {
     background-color: #fff;
     position: absolute;
@@ -1846,6 +1854,9 @@ tr {
   }
   .alert {
     margin: 0 0 15px 0px;
+  }
+  .alert svg {
+    font-size: 26px;
   }
   .navbar .dropdown {
     margin-bottom: 15px;
@@ -1955,6 +1966,9 @@ tr {
     margin-top: 140px;
   }
   /* End About Survey */
+  .alert svg {
+    font-size: 22px;
+  }
   /* Start Footer */
   .footer .copyright {
     font-size: 14px;
@@ -1978,6 +1992,9 @@ tr {
     margin-top: 140px;
   }
   /* End About Survey */
+  .alert svg {
+    font-size: 18px;
+  }
   .heading {
     font-size: 22px;
   }
